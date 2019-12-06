@@ -1,0 +1,14 @@
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\bin\Debug\QuanLyQuanCaFe.exe.config
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\bin\Debug\QuanLyQuanCaFe.exe
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\bin\Debug\QuanLyQuanCaFe.pdb
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\bin\Debug\Bunifu_UI_v1.5.3.dll
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.csprojAssemblyReference.cache
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.fAdmin.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.fLogin.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.fTableManager.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.Properties.Resources.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.csproj.GenerateResource.cache
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.csproj.CoreCompileInputs.cache
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.csproj.CopyComplete
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.exe
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.pdb

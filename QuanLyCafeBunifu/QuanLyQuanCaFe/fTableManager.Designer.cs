@@ -29,18 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation43 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation47 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation46 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation45 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation48 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation44 = new BunifuAnimatorNS.Animation();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInformation = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -66,11 +61,6 @@
             this.lbHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.animationAdmin = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnTable = new System.Windows.Forms.Panel();
-            this.dgvTable = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -92,6 +82,11 @@
             this.animationMenuOpen = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.anmationLogo = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.animationMenuClose = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.lsvBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
@@ -100,7 +95,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbiconhead)).BeginInit();
             this.pnTable.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -122,9 +116,9 @@
             this.anmationLogo.SetDecoration(this.pnMenu, BunifuAnimatorNS.DecorationType.None);
             this.animationTable.SetDecoration(this.pnMenu, BunifuAnimatorNS.DecorationType.None);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Location = new System.Drawing.Point(0, 43);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(45, 537);
+            this.pnMenu.Size = new System.Drawing.Size(250, 494);
             this.pnMenu.TabIndex = 0;
             // 
             // btnAdmin
@@ -154,7 +148,7 @@
             this.btnAdmin.IconVisible = true;
             this.btnAdmin.IconZoom = 50D;
             this.btnAdmin.IsTab = true;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 166);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 209);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnAdmin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -195,7 +189,7 @@
             this.btnInformation.IconVisible = true;
             this.btnInformation.IconZoom = 50D;
             this.btnInformation.IsTab = true;
-            this.btnInformation.Location = new System.Drawing.Point(-3, 220);
+            this.btnInformation.Location = new System.Drawing.Point(0, 158);
             this.btnInformation.Name = "btnInformation";
             this.btnInformation.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.btnInformation.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
@@ -220,7 +214,7 @@
             this.anmationLogo.SetDecoration(this.btnMenu, BunifuAnimatorNS.DecorationType.None);
             this.btnMenu.Image = global::QuanLyQuanCaFe.Properties.Resources.mobile_nav_icon;
             this.btnMenu.ImageActive = null;
-            this.btnMenu.Location = new System.Drawing.Point(10, 19);
+            this.btnMenu.Location = new System.Drawing.Point(210, 19);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(26, 23);
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -285,7 +279,6 @@
             this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbLogo.TabIndex = 2;
             this.ptbLogo.TabStop = false;
-            this.ptbLogo.Visible = false;
             // 
             // pnAcount
             // 
@@ -310,7 +303,7 @@
             this.animationAdmin.SetDecoration(this.pnAcount, BunifuAnimatorNS.DecorationType.None);
             this.anmationLogo.SetDecoration(this.pnAcount, BunifuAnimatorNS.DecorationType.None);
             this.animationTable.SetDecoration(this.pnAcount, BunifuAnimatorNS.DecorationType.None);
-            this.pnAcount.Location = new System.Drawing.Point(49, 45);
+            this.pnAcount.Location = new System.Drawing.Point(46, 41);
             this.pnAcount.Name = "pnAcount";
             this.pnAcount.Size = new System.Drawing.Size(939, 491);
             this.pnAcount.TabIndex = 0;
@@ -601,9 +594,9 @@
             this.anmationLogo.SetDecoration(this.head, BunifuAnimatorNS.DecorationType.None);
             this.animationTable.SetDecoration(this.head, BunifuAnimatorNS.DecorationType.None);
             this.head.Dock = System.Windows.Forms.DockStyle.Top;
-            this.head.Location = new System.Drawing.Point(45, 0);
+            this.head.Location = new System.Drawing.Point(0, 0);
             this.head.Name = "head";
-            this.head.Size = new System.Drawing.Size(945, 43);
+            this.head.Size = new System.Drawing.Size(990, 43);
             this.head.TabIndex = 1;
             // 
             // ptbExit
@@ -660,27 +653,27 @@
             // 
             this.animationAdmin.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationAdmin.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.animationAdmin.DefaultAnimation = animation3;
+            animation43.AnimateOnlyDifferences = true;
+            animation43.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.BlindCoeff")));
+            animation43.LeafCoeff = 0F;
+            animation43.MaxTime = 1F;
+            animation43.MinTime = 0F;
+            animation43.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.MosaicCoeff")));
+            animation43.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation43.MosaicShift")));
+            animation43.MosaicSize = 0;
+            animation43.Padding = new System.Windows.Forms.Padding(0);
+            animation43.RotateCoeff = 0F;
+            animation43.RotateLimit = 0F;
+            animation43.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.ScaleCoeff")));
+            animation43.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.SlideCoeff")));
+            animation43.TimeCoeff = 0F;
+            animation43.TransparencyCoeff = 0F;
+            this.animationAdmin.DefaultAnimation = animation43;
             // 
             // pnTable
             // 
             this.pnTable.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            this.pnTable.Controls.Add(this.dgvTable);
+            this.pnTable.Controls.Add(this.lsvBill);
             this.pnTable.Controls.Add(this.panel1);
             this.pnTable.Controls.Add(this.panel2);
             this.pnTable.Controls.Add(this.flpTable);
@@ -690,94 +683,10 @@
             this.animationAdmin.SetDecoration(this.pnTable, BunifuAnimatorNS.DecorationType.None);
             this.anmationLogo.SetDecoration(this.pnTable, BunifuAnimatorNS.DecorationType.None);
             this.animationTable.SetDecoration(this.pnTable, BunifuAnimatorNS.DecorationType.BottomMirror);
-            this.pnTable.Location = new System.Drawing.Point(46, 56);
+            this.pnTable.Location = new System.Drawing.Point(46, 49);
             this.pnTable.Name = "pnTable";
             this.pnTable.Size = new System.Drawing.Size(939, 491);
             this.pnTable.TabIndex = 2;
-            // 
-            // dgvTable
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dgvTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dgvTable.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
-            this.anmationLogo.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.dgvTable, BunifuAnimatorNS.DecorationType.None);
-            this.dgvTable.DoubleBuffered = true;
-            this.dgvTable.EnableHeadersVisualStyles = false;
-            this.dgvTable.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvTable.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvTable.Location = new System.Drawing.Point(541, 64);
-            this.dgvTable.Name = "dgvTable";
-            this.dgvTable.ReadOnly = true;
-            this.dgvTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvTable.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvTable.Size = new System.Drawing.Size(401, 359);
-            this.dgvTable.TabIndex = 2;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column1.HeaderText = "Tên món";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 80;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column2.HeaderText = "Số lượng";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 80;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column3.HeaderText = "Đơn giá";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 76;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column4.HeaderText = "Thành tiền";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 90;
             // 
             // panel1
             // 
@@ -1122,115 +1031,156 @@
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.head;
+            this.bunifuDragControl1.TargetControl = this.pnMenu;
             this.bunifuDragControl1.Vertical = true;
             // 
             // animationTable
             // 
             this.animationTable.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.animationTable.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.animationTable.DefaultAnimation = animation2;
+            animation47.AnimateOnlyDifferences = true;
+            animation47.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.BlindCoeff")));
+            animation47.LeafCoeff = 0F;
+            animation47.MaxTime = 1F;
+            animation47.MinTime = 0F;
+            animation47.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.MosaicCoeff")));
+            animation47.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation47.MosaicShift")));
+            animation47.MosaicSize = 0;
+            animation47.Padding = new System.Windows.Forms.Padding(0);
+            animation47.RotateCoeff = 0F;
+            animation47.RotateLimit = 0F;
+            animation47.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.ScaleCoeff")));
+            animation47.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.SlideCoeff")));
+            animation47.TimeCoeff = 0F;
+            animation47.TransparencyCoeff = 0F;
+            this.animationTable.DefaultAnimation = animation47;
             // 
             // animationInfo
             // 
             this.animationInfo.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationInfo.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.animationInfo.DefaultAnimation = animation5;
+            animation46.AnimateOnlyDifferences = true;
+            animation46.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.BlindCoeff")));
+            animation46.LeafCoeff = 0F;
+            animation46.MaxTime = 1F;
+            animation46.MinTime = 0F;
+            animation46.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.MosaicCoeff")));
+            animation46.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation46.MosaicShift")));
+            animation46.MosaicSize = 0;
+            animation46.Padding = new System.Windows.Forms.Padding(0);
+            animation46.RotateCoeff = 0F;
+            animation46.RotateLimit = 0F;
+            animation46.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.ScaleCoeff")));
+            animation46.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.SlideCoeff")));
+            animation46.TimeCoeff = 0F;
+            animation46.TransparencyCoeff = 0F;
+            this.animationInfo.DefaultAnimation = animation46;
             // 
             // animationMenuOpen
             // 
             this.animationMenuOpen.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationMenuOpen.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.animationMenuOpen.DefaultAnimation = animation4;
+            animation45.AnimateOnlyDifferences = true;
+            animation45.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.BlindCoeff")));
+            animation45.LeafCoeff = 0F;
+            animation45.MaxTime = 1F;
+            animation45.MinTime = 0F;
+            animation45.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.MosaicCoeff")));
+            animation45.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation45.MosaicShift")));
+            animation45.MosaicSize = 0;
+            animation45.Padding = new System.Windows.Forms.Padding(0);
+            animation45.RotateCoeff = 0F;
+            animation45.RotateLimit = 0F;
+            animation45.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.ScaleCoeff")));
+            animation45.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.SlideCoeff")));
+            animation45.TimeCoeff = 0F;
+            animation45.TransparencyCoeff = 0F;
+            this.animationMenuOpen.DefaultAnimation = animation45;
             this.animationMenuOpen.Interval = 13;
             // 
             // anmationLogo
             // 
             this.anmationLogo.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.anmationLogo.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.anmationLogo.DefaultAnimation = animation1;
+            animation48.AnimateOnlyDifferences = true;
+            animation48.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.BlindCoeff")));
+            animation48.LeafCoeff = 0F;
+            animation48.MaxTime = 1F;
+            animation48.MinTime = 0F;
+            animation48.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.MosaicCoeff")));
+            animation48.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation48.MosaicShift")));
+            animation48.MosaicSize = 0;
+            animation48.Padding = new System.Windows.Forms.Padding(0);
+            animation48.RotateCoeff = 0F;
+            animation48.RotateLimit = 0F;
+            animation48.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.ScaleCoeff")));
+            animation48.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.SlideCoeff")));
+            animation48.TimeCoeff = 0F;
+            animation48.TransparencyCoeff = 0F;
+            this.anmationLogo.DefaultAnimation = animation48;
             // 
             // animationMenuClose
             // 
             this.animationMenuClose.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.animationMenuClose.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 1F;
-            this.animationMenuClose.DefaultAnimation = animation6;
+            animation44.AnimateOnlyDifferences = true;
+            animation44.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.BlindCoeff")));
+            animation44.LeafCoeff = 0F;
+            animation44.MaxTime = 1F;
+            animation44.MinTime = 0F;
+            animation44.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.MosaicCoeff")));
+            animation44.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation44.MosaicShift")));
+            animation44.MosaicSize = 0;
+            animation44.Padding = new System.Windows.Forms.Padding(0);
+            animation44.RotateCoeff = 0F;
+            animation44.RotateLimit = 0F;
+            animation44.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.ScaleCoeff")));
+            animation44.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.SlideCoeff")));
+            animation44.TimeCoeff = 0F;
+            animation44.TransparencyCoeff = 1F;
+            this.animationMenuClose.DefaultAnimation = animation44;
             this.animationMenuClose.Interval = 13;
+            // 
+            // lsvBill
+            // 
+            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.animationTable.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.anmationLogo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.lsvBill.GridLines = true;
+            this.lsvBill.HideSelection = false;
+            this.lsvBill.Location = new System.Drawing.Point(541, 67);
+            this.lsvBill.Name = "lsvBill";
+            this.lsvBill.Size = new System.Drawing.Size(395, 351);
+            this.lsvBill.TabIndex = 8;
+            this.lsvBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 127;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 67;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 73;
             // 
             // fTableManager
             // 
@@ -1238,9 +1188,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(990, 537);
+            this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnTable);
             this.Controls.Add(this.head);
-            this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnAcount);
             this.animationMenuClose.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.animationAdmin.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
@@ -1262,7 +1212,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbiconhead)).EndInit();
             this.pnTable.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -1292,7 +1241,6 @@
         private BunifuAnimatorNS.BunifuTransition animationMenuOpen;
         private BunifuAnimatorNS.BunifuTransition anmationLogo;
         private System.Windows.Forms.Panel pnTable;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvTable;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -1306,10 +1254,6 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
         private Bunifu.Framework.UI.BunifuFlatButton btnAdd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Panel pnAcount;
         private BunifuAnimatorNS.DoubleBitmapControl doubleBitmapControl1;
@@ -1325,5 +1269,10 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox5;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
+        private System.Windows.Forms.ListView lsvBill;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }

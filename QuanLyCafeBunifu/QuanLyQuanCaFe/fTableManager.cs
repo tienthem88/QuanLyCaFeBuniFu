@@ -89,7 +89,17 @@ namespace QuanLyQuanCaFe
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            
+            if (pnMenu.Width == 250)
+            {
+                ptbLogo.Visible = false;
+                pnMenu.Visible = false;
+                pnMenu.Width = 45;
+
+                btnMenu.Location = new Point(10, 19);
+                animationMenuClose.ShowSync(pnMenu);
+                anmationLogo.ShowSync(btnMenu);
+
+            }
             animationTable.Hide(pnTable);
             //pnAcount.BringToFront();
         }
