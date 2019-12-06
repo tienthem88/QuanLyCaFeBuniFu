@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation43 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation13 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fTableManager));
-            BunifuAnimatorNS.Animation animation47 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation46 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation45 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation48 = new BunifuAnimatorNS.Animation();
-            BunifuAnimatorNS.Animation animation44 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation15 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation17 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation16 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation14 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation18 = new BunifuAnimatorNS.Animation();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.btnAdmin = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInformation = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -61,18 +61,23 @@
             this.lbHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.animationAdmin = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.pnTable = new System.Windows.Forms.Panel();
+            this.lsvBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAdd = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnThem = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
+            this.cbFood = new System.Windows.Forms.ComboBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnChuyenban = new Bunifu.Framework.UI.BunifuFlatButton();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnDiscount = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnTotalPrice = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tbxTotalPrice = new System.Windows.Forms.TextBox();
+            this.btnDiscound = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnThanhtoan = new Bunifu.Framework.UI.BunifuFlatButton();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -82,11 +87,6 @@
             this.animationMenuOpen = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.anmationLogo = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.animationMenuClose = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.lsvBill = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbiconhead)).BeginInit();
             this.pnTable.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.panel2.SuspendLayout();
             this.flpTable.SuspendLayout();
             this.SuspendLayout();
@@ -653,22 +653,22 @@
             // 
             this.animationAdmin.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationAdmin.Cursor = null;
-            animation43.AnimateOnlyDifferences = true;
-            animation43.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.BlindCoeff")));
-            animation43.LeafCoeff = 0F;
-            animation43.MaxTime = 1F;
-            animation43.MinTime = 0F;
-            animation43.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.MosaicCoeff")));
-            animation43.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation43.MosaicShift")));
-            animation43.MosaicSize = 0;
-            animation43.Padding = new System.Windows.Forms.Padding(0);
-            animation43.RotateCoeff = 0F;
-            animation43.RotateLimit = 0F;
-            animation43.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.ScaleCoeff")));
-            animation43.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation43.SlideCoeff")));
-            animation43.TimeCoeff = 0F;
-            animation43.TransparencyCoeff = 0F;
-            this.animationAdmin.DefaultAnimation = animation43;
+            animation13.AnimateOnlyDifferences = true;
+            animation13.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.BlindCoeff")));
+            animation13.LeafCoeff = 0F;
+            animation13.MaxTime = 1F;
+            animation13.MinTime = 0F;
+            animation13.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicCoeff")));
+            animation13.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation13.MosaicShift")));
+            animation13.MosaicSize = 0;
+            animation13.Padding = new System.Windows.Forms.Padding(0);
+            animation13.RotateCoeff = 0F;
+            animation13.RotateLimit = 0F;
+            animation13.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.ScaleCoeff")));
+            animation13.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation13.SlideCoeff")));
+            animation13.TimeCoeff = 0F;
+            animation13.TransparencyCoeff = 0F;
+            this.animationAdmin.DefaultAnimation = animation13;
             // 
             // pnTable
             // 
@@ -688,13 +688,54 @@
             this.pnTable.Size = new System.Drawing.Size(939, 491);
             this.pnTable.TabIndex = 2;
             // 
+            // lsvBill
+            // 
+            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.animationTable.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.anmationLogo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
+            this.lsvBill.GridLines = true;
+            this.lsvBill.HideSelection = false;
+            this.lsvBill.Location = new System.Drawing.Point(541, 67);
+            this.lsvBill.Name = "lsvBill";
+            this.lsvBill.Size = new System.Drawing.Size(395, 351);
+            this.lsvBill.TabIndex = 8;
+            this.lsvBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Tên món";
+            this.columnHeader1.Width = 127;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Số lượng";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Đơn giá";
+            this.columnHeader3.Width = 67;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Thành tiền";
+            this.columnHeader4.Width = 73;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.btnThem);
+            this.panel1.Controls.Add(this.nmFoodCount);
+            this.panel1.Controls.Add(this.cbFood);
+            this.panel1.Controls.Add(this.cbCategory);
             this.animationMenuClose.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.animationInfo.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.animationMenuOpen.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
@@ -706,110 +747,112 @@
             this.panel1.Size = new System.Drawing.Size(401, 60);
             this.panel1.TabIndex = 1;
             // 
-            // btnAdd
+            // btnThem
             // 
-            this.btnAdd.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdd.BorderRadius = 0;
-            this.btnAdd.ButtonText = "Thêm món";
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmationLogo.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.btnAdd, BunifuAnimatorNS.DecorationType.None);
-            this.btnAdd.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAdd.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAdd.Iconimage = null;
-            this.btnAdd.Iconimage_right = null;
-            this.btnAdd.Iconimage_right_Selected = null;
-            this.btnAdd.Iconimage_Selected = null;
-            this.btnAdd.IconMarginLeft = 0;
-            this.btnAdd.IconMarginRight = 0;
-            this.btnAdd.IconRightVisible = true;
-            this.btnAdd.IconRightZoom = 0D;
-            this.btnAdd.IconVisible = true;
-            this.btnAdd.IconZoom = 90D;
-            this.btnAdd.IsTab = false;
-            this.btnAdd.Location = new System.Drawing.Point(227, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnAdd.OnHovercolor = System.Drawing.Color.SeaGreen;
-            this.btnAdd.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnAdd.selected = false;
-            this.btnAdd.Size = new System.Drawing.Size(77, 57);
-            this.btnAdd.TabIndex = 7;
-            this.btnAdd.Text = "Thêm món";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAdd.Textcolor = System.Drawing.Color.White;
-            this.btnAdd.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThem.BorderRadius = 0;
+            this.btnThem.ButtonText = "Thêm món";
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmationLogo.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.btnThem, BunifuAnimatorNS.DecorationType.None);
+            this.btnThem.DisabledColor = System.Drawing.Color.Gray;
+            this.btnThem.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnThem.Iconimage = null;
+            this.btnThem.Iconimage_right = null;
+            this.btnThem.Iconimage_right_Selected = null;
+            this.btnThem.Iconimage_Selected = null;
+            this.btnThem.IconMarginLeft = 0;
+            this.btnThem.IconMarginRight = 0;
+            this.btnThem.IconRightVisible = true;
+            this.btnThem.IconRightZoom = 0D;
+            this.btnThem.IconVisible = true;
+            this.btnThem.IconZoom = 90D;
+            this.btnThem.IsTab = false;
+            this.btnThem.Location = new System.Drawing.Point(227, 0);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThem.OnHovercolor = System.Drawing.Color.SeaGreen;
+            this.btnThem.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnThem.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThem.selected = false;
+            this.btnThem.Size = new System.Drawing.Size(77, 57);
+            this.btnThem.TabIndex = 7;
+            this.btnThem.Text = "Thêm món";
+            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThem.Textcolor = System.Drawing.Color.White;
+            this.btnThem.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // numericUpDown1
+            // nmFoodCount
             // 
-            this.anmationLogo.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.numericUpDown1, BunifuAnimatorNS.DecorationType.None);
-            this.numericUpDown1.Location = new System.Drawing.Point(311, 19);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.anmationLogo.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.nmFoodCount, BunifuAnimatorNS.DecorationType.None);
+            this.nmFoodCount.Location = new System.Drawing.Point(311, 19);
+            this.nmFoodCount.Minimum = new decimal(new int[] {
             100,
             0,
             0,
             -2147483648});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(87, 20);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nmFoodCount.Name = "nmFoodCount";
+            this.nmFoodCount.Size = new System.Drawing.Size(87, 20);
+            this.nmFoodCount.TabIndex = 3;
+            this.nmFoodCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nmFoodCount.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // comboBox2
+            // cbFood
             // 
-            this.anmationLogo.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(0, 36);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 21);
-            this.comboBox2.TabIndex = 1;
+            this.anmationLogo.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.cbFood, BunifuAnimatorNS.DecorationType.None);
+            this.cbFood.FormattingEnabled = true;
+            this.cbFood.Location = new System.Drawing.Point(0, 36);
+            this.cbFood.Name = "cbFood";
+            this.cbFood.Size = new System.Drawing.Size(220, 21);
+            this.cbFood.TabIndex = 1;
             // 
-            // comboBox1
+            // cbCategory
             // 
-            this.anmationLogo.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(0, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 21);
-            this.comboBox1.TabIndex = 0;
+            this.anmationLogo.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.cbCategory, BunifuAnimatorNS.DecorationType.None);
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(0, 3);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(220, 21);
+            this.cbCategory.TabIndex = 0;
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.panel2.Controls.Add(this.bunifuFlatButton1);
+            this.panel2.Controls.Add(this.btnChuyenban);
             this.panel2.Controls.Add(this.comboBox4);
             this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.btnDiscount);
-            this.panel2.Controls.Add(this.btnTotalPrice);
+            this.panel2.Controls.Add(this.tbxTotalPrice);
+            this.panel2.Controls.Add(this.btnDiscound);
+            this.panel2.Controls.Add(this.btnThanhtoan);
             this.animationMenuClose.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.animationInfo.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.animationMenuOpen.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
@@ -821,48 +864,48 @@
             this.panel2.Size = new System.Drawing.Size(401, 60);
             this.panel2.TabIndex = 4;
             // 
-            // bunifuFlatButton1
+            // btnChuyenban
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Chuyển bàn";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmationLogo.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(4, 2);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(87, 27);
-            this.bunifuFlatButton1.TabIndex = 7;
-            this.bunifuFlatButton1.Text = "Chuyển bàn";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChuyenban.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnChuyenban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnChuyenban.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChuyenban.BorderRadius = 0;
+            this.btnChuyenban.ButtonText = "Chuyển bàn";
+            this.btnChuyenban.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmationLogo.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.btnChuyenban, BunifuAnimatorNS.DecorationType.None);
+            this.btnChuyenban.DisabledColor = System.Drawing.Color.Gray;
+            this.btnChuyenban.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChuyenban.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnChuyenban.Iconimage = null;
+            this.btnChuyenban.Iconimage_right = null;
+            this.btnChuyenban.Iconimage_right_Selected = null;
+            this.btnChuyenban.Iconimage_Selected = null;
+            this.btnChuyenban.IconMarginLeft = 0;
+            this.btnChuyenban.IconMarginRight = 0;
+            this.btnChuyenban.IconRightVisible = true;
+            this.btnChuyenban.IconRightZoom = 0D;
+            this.btnChuyenban.IconVisible = true;
+            this.btnChuyenban.IconZoom = 90D;
+            this.btnChuyenban.IsTab = false;
+            this.btnChuyenban.Location = new System.Drawing.Point(4, 2);
+            this.btnChuyenban.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChuyenban.Name = "btnChuyenban";
+            this.btnChuyenban.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnChuyenban.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnChuyenban.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnChuyenban.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnChuyenban.selected = false;
+            this.btnChuyenban.Size = new System.Drawing.Size(87, 27);
+            this.btnChuyenban.TabIndex = 7;
+            this.btnChuyenban.Text = "Chuyển bàn";
+            this.btnChuyenban.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnChuyenban.Textcolor = System.Drawing.Color.White;
+            this.btnChuyenban.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // comboBox4
             // 
@@ -892,105 +935,105 @@
             this.comboBox3.Size = new System.Drawing.Size(87, 21);
             this.comboBox3.TabIndex = 4;
             // 
-            // textBox1
+            // tbxTotalPrice
             // 
-            this.anmationLogo.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.textBox1, BunifuAnimatorNS.DecorationType.None);
-            this.textBox1.Location = new System.Drawing.Point(98, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(112, 20);
-            this.textBox1.TabIndex = 4;
+            this.anmationLogo.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.tbxTotalPrice, BunifuAnimatorNS.DecorationType.None);
+            this.tbxTotalPrice.Location = new System.Drawing.Point(98, 20);
+            this.tbxTotalPrice.Name = "tbxTotalPrice";
+            this.tbxTotalPrice.ReadOnly = true;
+            this.tbxTotalPrice.Size = new System.Drawing.Size(112, 20);
+            this.tbxTotalPrice.TabIndex = 4;
             // 
-            // btnDiscount
+            // btnDiscound
             // 
-            this.btnDiscount.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDiscount.BorderRadius = 0;
-            this.btnDiscount.ButtonText = "Giảm giá";
-            this.btnDiscount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmationLogo.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.btnDiscount, BunifuAnimatorNS.DecorationType.None);
-            this.btnDiscount.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDiscount.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscount.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDiscount.Iconimage = null;
-            this.btnDiscount.Iconimage_right = null;
-            this.btnDiscount.Iconimage_right_Selected = null;
-            this.btnDiscount.Iconimage_Selected = null;
-            this.btnDiscount.IconMarginLeft = 0;
-            this.btnDiscount.IconMarginRight = 0;
-            this.btnDiscount.IconRightVisible = true;
-            this.btnDiscount.IconRightZoom = 0D;
-            this.btnDiscount.IconVisible = true;
-            this.btnDiscount.IconZoom = 90D;
-            this.btnDiscount.IsTab = false;
-            this.btnDiscount.Location = new System.Drawing.Point(217, 2);
-            this.btnDiscount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscount.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnDiscount.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDiscount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDiscount.selected = false;
-            this.btnDiscount.Size = new System.Drawing.Size(87, 27);
-            this.btnDiscount.TabIndex = 3;
-            this.btnDiscount.Text = "Giảm giá";
-            this.btnDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDiscount.Textcolor = System.Drawing.Color.White;
-            this.btnDiscount.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscound.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnDiscound.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnDiscound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDiscound.BorderRadius = 0;
+            this.btnDiscound.ButtonText = "Giảm giá";
+            this.btnDiscound.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmationLogo.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.btnDiscound, BunifuAnimatorNS.DecorationType.None);
+            this.btnDiscound.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDiscound.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiscound.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDiscound.Iconimage = null;
+            this.btnDiscound.Iconimage_right = null;
+            this.btnDiscound.Iconimage_right_Selected = null;
+            this.btnDiscound.Iconimage_Selected = null;
+            this.btnDiscound.IconMarginLeft = 0;
+            this.btnDiscound.IconMarginRight = 0;
+            this.btnDiscound.IconRightVisible = true;
+            this.btnDiscound.IconRightZoom = 0D;
+            this.btnDiscound.IconVisible = true;
+            this.btnDiscound.IconZoom = 90D;
+            this.btnDiscound.IsTab = false;
+            this.btnDiscound.Location = new System.Drawing.Point(217, 2);
+            this.btnDiscound.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDiscound.Name = "btnDiscound";
+            this.btnDiscound.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnDiscound.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnDiscound.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDiscound.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnDiscound.selected = false;
+            this.btnDiscound.Size = new System.Drawing.Size(87, 27);
+            this.btnDiscound.TabIndex = 3;
+            this.btnDiscound.Text = "Giảm giá";
+            this.btnDiscound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDiscound.Textcolor = System.Drawing.Color.White;
+            this.btnDiscound.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // btnTotalPrice
+            // btnThanhtoan
             // 
-            this.btnTotalPrice.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnTotalPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnTotalPrice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTotalPrice.BorderRadius = 0;
-            this.btnTotalPrice.ButtonText = "Thanh toán";
-            this.btnTotalPrice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.anmationLogo.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.animationTable.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.btnTotalPrice, BunifuAnimatorNS.DecorationType.None);
-            this.btnTotalPrice.DisabledColor = System.Drawing.Color.Gray;
-            this.btnTotalPrice.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTotalPrice.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnTotalPrice.Iconimage = null;
-            this.btnTotalPrice.Iconimage_right = null;
-            this.btnTotalPrice.Iconimage_right_Selected = null;
-            this.btnTotalPrice.Iconimage_Selected = null;
-            this.btnTotalPrice.IconMarginLeft = 0;
-            this.btnTotalPrice.IconMarginRight = 0;
-            this.btnTotalPrice.IconRightVisible = true;
-            this.btnTotalPrice.IconRightZoom = 0D;
-            this.btnTotalPrice.IconVisible = true;
-            this.btnTotalPrice.IconZoom = 90D;
-            this.btnTotalPrice.IsTab = false;
-            this.btnTotalPrice.Location = new System.Drawing.Point(320, 2);
-            this.btnTotalPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnTotalPrice.Name = "btnTotalPrice";
-            this.btnTotalPrice.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnTotalPrice.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnTotalPrice.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnTotalPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnTotalPrice.selected = false;
-            this.btnTotalPrice.Size = new System.Drawing.Size(77, 57);
-            this.btnTotalPrice.TabIndex = 2;
-            this.btnTotalPrice.Text = "Thanh toán";
-            this.btnTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnTotalPrice.Textcolor = System.Drawing.Color.White;
-            this.btnTotalPrice.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhtoan.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThanhtoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThanhtoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThanhtoan.BorderRadius = 0;
+            this.btnThanhtoan.ButtonText = "Thanh toán";
+            this.btnThanhtoan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.anmationLogo.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.animationTable.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.animationAdmin.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuOpen.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.animationInfo.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.animationMenuClose.SetDecoration(this.btnThanhtoan, BunifuAnimatorNS.DecorationType.None);
+            this.btnThanhtoan.DisabledColor = System.Drawing.Color.Gray;
+            this.btnThanhtoan.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhtoan.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnThanhtoan.Iconimage = null;
+            this.btnThanhtoan.Iconimage_right = null;
+            this.btnThanhtoan.Iconimage_right_Selected = null;
+            this.btnThanhtoan.Iconimage_Selected = null;
+            this.btnThanhtoan.IconMarginLeft = 0;
+            this.btnThanhtoan.IconMarginRight = 0;
+            this.btnThanhtoan.IconRightVisible = true;
+            this.btnThanhtoan.IconRightZoom = 0D;
+            this.btnThanhtoan.IconVisible = true;
+            this.btnThanhtoan.IconZoom = 90D;
+            this.btnThanhtoan.IsTab = false;
+            this.btnThanhtoan.Location = new System.Drawing.Point(320, 2);
+            this.btnThanhtoan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThanhtoan.Name = "btnThanhtoan";
+            this.btnThanhtoan.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnThanhtoan.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnThanhtoan.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnThanhtoan.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnThanhtoan.selected = false;
+            this.btnThanhtoan.Size = new System.Drawing.Size(77, 57);
+            this.btnThanhtoan.TabIndex = 2;
+            this.btnThanhtoan.Text = "Thanh toán";
+            this.btnThanhtoan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThanhtoan.Textcolor = System.Drawing.Color.White;
+            this.btnThanhtoan.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // flpTable
             // 
@@ -1038,149 +1081,108 @@
             // 
             this.animationTable.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.animationTable.Cursor = null;
-            animation47.AnimateOnlyDifferences = true;
-            animation47.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.BlindCoeff")));
-            animation47.LeafCoeff = 0F;
-            animation47.MaxTime = 1F;
-            animation47.MinTime = 0F;
-            animation47.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.MosaicCoeff")));
-            animation47.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation47.MosaicShift")));
-            animation47.MosaicSize = 0;
-            animation47.Padding = new System.Windows.Forms.Padding(0);
-            animation47.RotateCoeff = 0F;
-            animation47.RotateLimit = 0F;
-            animation47.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.ScaleCoeff")));
-            animation47.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation47.SlideCoeff")));
-            animation47.TimeCoeff = 0F;
-            animation47.TransparencyCoeff = 0F;
-            this.animationTable.DefaultAnimation = animation47;
+            animation15.AnimateOnlyDifferences = true;
+            animation15.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.BlindCoeff")));
+            animation15.LeafCoeff = 0F;
+            animation15.MaxTime = 1F;
+            animation15.MinTime = 0F;
+            animation15.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicCoeff")));
+            animation15.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation15.MosaicShift")));
+            animation15.MosaicSize = 0;
+            animation15.Padding = new System.Windows.Forms.Padding(0);
+            animation15.RotateCoeff = 0F;
+            animation15.RotateLimit = 0F;
+            animation15.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.ScaleCoeff")));
+            animation15.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation15.SlideCoeff")));
+            animation15.TimeCoeff = 0F;
+            animation15.TransparencyCoeff = 0F;
+            this.animationTable.DefaultAnimation = animation15;
             // 
             // animationInfo
             // 
             this.animationInfo.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationInfo.Cursor = null;
-            animation46.AnimateOnlyDifferences = true;
-            animation46.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.BlindCoeff")));
-            animation46.LeafCoeff = 0F;
-            animation46.MaxTime = 1F;
-            animation46.MinTime = 0F;
-            animation46.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.MosaicCoeff")));
-            animation46.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation46.MosaicShift")));
-            animation46.MosaicSize = 0;
-            animation46.Padding = new System.Windows.Forms.Padding(0);
-            animation46.RotateCoeff = 0F;
-            animation46.RotateLimit = 0F;
-            animation46.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.ScaleCoeff")));
-            animation46.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation46.SlideCoeff")));
-            animation46.TimeCoeff = 0F;
-            animation46.TransparencyCoeff = 0F;
-            this.animationInfo.DefaultAnimation = animation46;
+            animation17.AnimateOnlyDifferences = true;
+            animation17.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.BlindCoeff")));
+            animation17.LeafCoeff = 0F;
+            animation17.MaxTime = 1F;
+            animation17.MinTime = 0F;
+            animation17.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicCoeff")));
+            animation17.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation17.MosaicShift")));
+            animation17.MosaicSize = 0;
+            animation17.Padding = new System.Windows.Forms.Padding(0);
+            animation17.RotateCoeff = 0F;
+            animation17.RotateLimit = 0F;
+            animation17.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.ScaleCoeff")));
+            animation17.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation17.SlideCoeff")));
+            animation17.TimeCoeff = 0F;
+            animation17.TransparencyCoeff = 0F;
+            this.animationInfo.DefaultAnimation = animation17;
             // 
             // animationMenuOpen
             // 
             this.animationMenuOpen.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.animationMenuOpen.Cursor = null;
-            animation45.AnimateOnlyDifferences = true;
-            animation45.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.BlindCoeff")));
-            animation45.LeafCoeff = 0F;
-            animation45.MaxTime = 1F;
-            animation45.MinTime = 0F;
-            animation45.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.MosaicCoeff")));
-            animation45.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation45.MosaicShift")));
-            animation45.MosaicSize = 0;
-            animation45.Padding = new System.Windows.Forms.Padding(0);
-            animation45.RotateCoeff = 0F;
-            animation45.RotateLimit = 0F;
-            animation45.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.ScaleCoeff")));
-            animation45.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation45.SlideCoeff")));
-            animation45.TimeCoeff = 0F;
-            animation45.TransparencyCoeff = 0F;
-            this.animationMenuOpen.DefaultAnimation = animation45;
+            animation16.AnimateOnlyDifferences = true;
+            animation16.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.BlindCoeff")));
+            animation16.LeafCoeff = 0F;
+            animation16.MaxTime = 1F;
+            animation16.MinTime = 0F;
+            animation16.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicCoeff")));
+            animation16.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation16.MosaicShift")));
+            animation16.MosaicSize = 0;
+            animation16.Padding = new System.Windows.Forms.Padding(0);
+            animation16.RotateCoeff = 0F;
+            animation16.RotateLimit = 0F;
+            animation16.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.ScaleCoeff")));
+            animation16.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation16.SlideCoeff")));
+            animation16.TimeCoeff = 0F;
+            animation16.TransparencyCoeff = 0F;
+            this.animationMenuOpen.DefaultAnimation = animation16;
             this.animationMenuOpen.Interval = 13;
             // 
             // anmationLogo
             // 
             this.anmationLogo.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
             this.anmationLogo.Cursor = null;
-            animation48.AnimateOnlyDifferences = true;
-            animation48.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.BlindCoeff")));
-            animation48.LeafCoeff = 0F;
-            animation48.MaxTime = 1F;
-            animation48.MinTime = 0F;
-            animation48.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.MosaicCoeff")));
-            animation48.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation48.MosaicShift")));
-            animation48.MosaicSize = 0;
-            animation48.Padding = new System.Windows.Forms.Padding(0);
-            animation48.RotateCoeff = 0F;
-            animation48.RotateLimit = 0F;
-            animation48.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.ScaleCoeff")));
-            animation48.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation48.SlideCoeff")));
-            animation48.TimeCoeff = 0F;
-            animation48.TransparencyCoeff = 0F;
-            this.anmationLogo.DefaultAnimation = animation48;
+            animation14.AnimateOnlyDifferences = true;
+            animation14.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.BlindCoeff")));
+            animation14.LeafCoeff = 0F;
+            animation14.MaxTime = 1F;
+            animation14.MinTime = 0F;
+            animation14.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicCoeff")));
+            animation14.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation14.MosaicShift")));
+            animation14.MosaicSize = 0;
+            animation14.Padding = new System.Windows.Forms.Padding(0);
+            animation14.RotateCoeff = 0F;
+            animation14.RotateLimit = 0F;
+            animation14.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.ScaleCoeff")));
+            animation14.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation14.SlideCoeff")));
+            animation14.TimeCoeff = 0F;
+            animation14.TransparencyCoeff = 0F;
+            this.anmationLogo.DefaultAnimation = animation14;
             // 
             // animationMenuClose
             // 
             this.animationMenuClose.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.animationMenuClose.Cursor = null;
-            animation44.AnimateOnlyDifferences = true;
-            animation44.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.BlindCoeff")));
-            animation44.LeafCoeff = 0F;
-            animation44.MaxTime = 1F;
-            animation44.MinTime = 0F;
-            animation44.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.MosaicCoeff")));
-            animation44.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation44.MosaicShift")));
-            animation44.MosaicSize = 0;
-            animation44.Padding = new System.Windows.Forms.Padding(0);
-            animation44.RotateCoeff = 0F;
-            animation44.RotateLimit = 0F;
-            animation44.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.ScaleCoeff")));
-            animation44.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation44.SlideCoeff")));
-            animation44.TimeCoeff = 0F;
-            animation44.TransparencyCoeff = 1F;
-            this.animationMenuClose.DefaultAnimation = animation44;
+            animation18.AnimateOnlyDifferences = true;
+            animation18.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.BlindCoeff")));
+            animation18.LeafCoeff = 0F;
+            animation18.MaxTime = 1F;
+            animation18.MinTime = 0F;
+            animation18.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicCoeff")));
+            animation18.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation18.MosaicShift")));
+            animation18.MosaicSize = 0;
+            animation18.Padding = new System.Windows.Forms.Padding(0);
+            animation18.RotateCoeff = 0F;
+            animation18.RotateLimit = 0F;
+            animation18.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.ScaleCoeff")));
+            animation18.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation18.SlideCoeff")));
+            animation18.TimeCoeff = 0F;
+            animation18.TransparencyCoeff = 1F;
+            this.animationMenuClose.DefaultAnimation = animation18;
             this.animationMenuClose.Interval = 13;
-            // 
-            // lsvBill
-            // 
-            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.animationTable.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.animationAdmin.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuClose.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.animationMenuOpen.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.animationInfo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.anmationLogo.SetDecoration(this.lsvBill, BunifuAnimatorNS.DecorationType.None);
-            this.lsvBill.GridLines = true;
-            this.lsvBill.HideSelection = false;
-            this.lsvBill.Location = new System.Drawing.Point(541, 67);
-            this.lsvBill.Name = "lsvBill";
-            this.lsvBill.Size = new System.Drawing.Size(395, 351);
-            this.lsvBill.TabIndex = 8;
-            this.lsvBill.UseCompatibleStateImageBehavior = false;
-            this.lsvBill.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Tên món";
-            this.columnHeader1.Width = 127;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Số lượng";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Đơn giá";
-            this.columnHeader3.Width = 67;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Thành tiền";
-            this.columnHeader4.Width = 73;
             // 
             // fTableManager
             // 
@@ -1213,7 +1215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbiconhead)).EndInit();
             this.pnTable.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.flpTable.ResumeLayout(false);
@@ -1242,19 +1244,19 @@
         private BunifuAnimatorNS.BunifuTransition anmationLogo;
         private System.Windows.Forms.Panel pnTable;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbFood;
+        private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private BunifuAnimatorNS.BunifuTransition animationMenuClose;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDiscount;
-        private Bunifu.Framework.UI.BunifuFlatButton btnTotalPrice;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDiscound;
+        private Bunifu.Framework.UI.BunifuFlatButton btnThanhtoan;
+        private System.Windows.Forms.NumericUpDown nmFoodCount;
+        private System.Windows.Forms.TextBox tbxTotalPrice;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAdd;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnThem;
+        private Bunifu.Framework.UI.BunifuFlatButton btnChuyenban;
         private System.Windows.Forms.Panel pnAcount;
         private BunifuAnimatorNS.DoubleBitmapControl doubleBitmapControl1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;

@@ -19,24 +19,25 @@ namespace QuanLyQuanCaFe
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            string userName = tbxAcount.Text;
+            string passWord = tbxPassWord.Text;
+            if (Login(userName, passWord))
+            {
+                fTableManager f = new fTableManager();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
+            }
+        }
 
-            //string userName = tbxTendangnhap.Text;
-            //string passWord = tbxMatkhau.Text;
-            //if (Login(userName, passWord))
-            //{
-            //    fTableManager f = new fTableManager();
-            //    this.Hide();
-            //    f.ShowDialog();
-            //    this.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
-            //}
+        bool Login(string userName, string passWord)
+        {
+
+            return DAO.AccountDAO.Instance.Login(userName, passWord);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
