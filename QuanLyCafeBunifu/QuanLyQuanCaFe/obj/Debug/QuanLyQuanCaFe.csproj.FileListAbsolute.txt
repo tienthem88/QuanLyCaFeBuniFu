@@ -12,3 +12,11 @@ G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanC
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.csproj.CopyComplete
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.exe
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.pdb
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resource\QuanLyQuanCaFe.exe.config
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resource\QuanLyQuanCaFe.exe
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resource\QuanLyQuanCaFe.pdb
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resource\Bunifu_UI_v1.5.3.dll
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.exe.config
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.exe
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.pdb
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\Bunifu_UI_v1.5.3.dll

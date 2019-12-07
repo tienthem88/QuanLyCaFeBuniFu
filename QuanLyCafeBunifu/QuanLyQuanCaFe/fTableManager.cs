@@ -13,6 +13,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Menu = QuanLyQuanCaFe.DTO.Menu;
+using Bunifu;
 
 namespace QuanLyQuanCaFe
 {
@@ -45,20 +46,29 @@ namespace QuanLyQuanCaFe
 
         void LoadTable()
         {
+            if (pnMenu.Width == 250)
+                pnTable.Location = new Point(250, 49);
+            Bitmap bitmap = new Bitmap(Application.StartupPath + "\\btnTable.png");
+
             List<Table> tableList = TableDAO.Instance.LoadTableList();
             foreach (Table item in tableList)
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
-                btn.Text = item.Name + Environment.NewLine + item.Status;
+                btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+                btn.BackgroundImage = bitmap;
+                btn.ForeColor = System.Drawing.Color.Purple;
+                btn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+                btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+                btn.Text = "                             "+item.Name + Environment.NewLine + " " + item.Status;
                 btn.Click += Btn_Click;
                 btn.Tag = item;
                 switch (item.Status)
                 {
                     case "Trống":
-                        btn.BackColor = Color.Aqua;
+                        btn.BackColor = Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
                         break;
                     default:
-                        btn.BackColor = Color.Azure;
+                        btn.BackColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(185)))), ((int)(((byte)(201)))));
                         break;
                 }
 
@@ -124,8 +134,11 @@ namespace QuanLyQuanCaFe
                 btnMenu.Location = new Point(10, 19);
                 animationMenuClose.ShowSync(pnMenu);
                 anmationLogo.ShowSync(btnMenu);
-
+                if (pnTable.Location.X == 250)
+                    pnTable.Location = new Point(46, 44);
+                
             }
+
         }
 
         private void btnTable_Click(object sender, EventArgs e)
@@ -156,8 +169,6 @@ namespace QuanLyQuanCaFe
             fAdmin a = new fAdmin();
             this.Hide();
             
-            //animationTable.ShowSync(a);
-           
             a.ShowDialog();
             this.Show();
         }

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>Resources\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -117,7 +117,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\btnTable.png" />
+    <None Include="Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png" />
+    <None Include="Resources\close+delete+exit+no+remove+stop+icon-1320191167239715440.png" />
+    <None Include="Resources\quit-5121.png" />
+    <None Include="Resources\quit-512.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\18520654_BuiTrongKhanhDuy_ĐBCT.png" />
   </ItemGroup>

@@ -143,6 +143,26 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_delete_exit_no_remove_stop_icon_1320191167239715440 {
+            get {
+                object obj = ResourceManager.GetObject("close+delete+exit+no+remove+stop+icon-1320191167239715440", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_delete_exit_no_remove_stop_icon_13201911672397154401 {
+            get {
+                object obj = ResourceManager.GetObject("close+delete+exit+no+remove+stop+icon-13201911672397154401", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_table_33_976476 {
             get {
                 object obj = ResourceManager.GetObject("coffee-table-33-976476", resourceCulture);
@@ -276,6 +296,26 @@ namespace QuanLyQuanCaFe.Properties {
         internal static System.Drawing.Bitmap profile_silhouette_vector_21 {
             get {
                 object obj = ResourceManager.GetObject("profile-silhouette-vector-21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_512 {
+            get {
+                object obj = ResourceManager.GetObject("quit-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap quit_5121 {
+            get {
+                object obj = ResourceManager.GetObject("quit-5121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
