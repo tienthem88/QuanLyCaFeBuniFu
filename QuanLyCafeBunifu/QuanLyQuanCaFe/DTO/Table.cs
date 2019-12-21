@@ -9,12 +9,16 @@ namespace QuanLyQuanCaFe.DTO
 {
     public class Table
     {
-
         public Table(int id, string name, string status)
         {
             this.ID = id;
             this.Name = name;
             this.Status = status;
+        }
+
+        public Table(string name)
+        {
+            this.Name = name;
         }
 
         public Table(DataRow row)

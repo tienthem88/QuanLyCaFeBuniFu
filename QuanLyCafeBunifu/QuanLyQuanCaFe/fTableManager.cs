@@ -17,17 +17,72 @@ using Bunifu;
 
 namespace QuanLyQuanCaFe
 {
+
+
     public partial class fTableManager : Form
     {
-        public fTableManager()
+        private Account loginAccount;
+
+        public Account LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; ChangeAccountAdmin(loginAccount.Type); ChangeAccount(loginAccount.Type); }
+        }
+
+        public fTableManager(Account acc)
         {
             InitializeComponent();
+
+            this.LoginAccount = acc;
+
             LoadTable();
             LoadCategory();
+            LoadComboboxTable(cbChuyenban);
         }
 
 
         #region Method
+
+        void ChangeAccountAdmin(int type)
+        {
+            if (type == 1)
+                btnAdmin.Enabled = true;
+            else
+                btnAdmin.Enabled = false;
+            btnInformation.Text += " (" + LoginAccount.DisplayName + ")";
+        }
+
+        void ChangeAccount(int type)
+        {
+            tbxUserName.Text = LoginAccount.UserName;
+            tbxDisplayName.Text = LoginAccount.DisplayName;
+        }
+
+        void UpdateAccount()
+        {
+            string displayName = tbxDisplayName.Text;
+            string password = tbxPassWord.Text;
+            string newpass = tbxNewPass.Text;
+            string repass = tbxRePass.Text;
+            string userName = tbxUserName.Text;
+
+            if(!newpass.Equals(repass))
+            {
+                MessageBox.Show("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới!");
+
+            }
+            else
+            {
+                if(AccountDAO.Instance.UpdateAccount(userName, displayName, password, newpass))
+                {
+                    MessageBox.Show("Cập nhật thành công");
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng điền đúng mật khẩu");
+                }
+            }
+        }
 
         void LoadCategory()
         {
@@ -46,18 +101,21 @@ namespace QuanLyQuanCaFe
 
         void LoadTable()
         {
-            if (pnMenu.Width == 250)
-                pnTable.Location = new Point(250, 49);
+            flpTable.Controls.Clear();
+            //if (pnMenu.Width == 250)
+            //    pnTable.Location = new Point(250, 49);
             Bitmap bitmap = new Bitmap(Application.StartupPath + "\\btnTable.png");
-
+            Bitmap bitmap1 = new Bitmap(Application.StartupPath + "\\btnTable12.png");
             List<Table> tableList = TableDAO.Instance.LoadTableList();
             foreach (Table item in tableList)
             {
                 Button btn = new Button() { Width = TableDAO.TableWidth, Height = TableDAO.TableHeight };
                 btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
                 btn.BackgroundImage = bitmap;
-                btn.ForeColor = System.Drawing.Color.Purple;
+                btn.UseVisualStyleBackColor = false;
+                btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
                 btn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+                btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
                 btn.Text = "                             "+item.Name + Environment.NewLine + " " + item.Status;
                 btn.Click += Btn_Click;
@@ -65,10 +123,9 @@ namespace QuanLyQuanCaFe
                 switch (item.Status)
                 {
                     case "Trống":
-                        btn.BackColor = Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
                         break;
                     default:
-                        btn.BackColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(185)))), ((int)(((byte)(201)))));
+                        btn.BackgroundImage = bitmap1;
                         break;
                 }
 
@@ -99,7 +156,12 @@ namespace QuanLyQuanCaFe
 
         }
 
+        void LoadComboboxTable(ComboBox cb)
+        {
+            cb.DataSource = TableDAO.Instance.LoadTableList();
+            cb.DisplayMember = "Name";
 
+        }
        
 
        
@@ -146,46 +208,46 @@ namespace QuanLyQuanCaFe
 
             if (pnTable.Visible == false)
             {
-                if(pnMenu.Width == 250)
-                {
-                    ptbLogo.Visible = false;
-                    pnMenu.Visible = false;
-                    pnMenu.Width = 45;
+                //if(pnMenu.Width == 250)
+                //{
+                //    ptbLogo.Visible = false;
+                //    pnMenu.Visible = false;
+                //    pnMenu.Width = 45;
                     
-                    btnMenu.Location = new Point(10, 19);
-                    animationMenuClose.ShowSync(pnMenu);
-                    anmationLogo.ShowSync(btnMenu);
+                //    btnMenu.Location = new Point(10, 19);
+                //    animationMenuClose.ShowSync(pnMenu);
+                //    anmationLogo.ShowSync(btnMenu);
 
-                }
-                pnTable.BringToFront();
+                //}
+                //pnTable.BringToFront();
                 animationTable.ShowSync(pnTable);
                
             }
-           
+            //animationTable.Hide(pnAcount);
+
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             fAdmin a = new fAdmin();
             this.Hide();
-            
             a.ShowDialog();
             this.Show();
         }
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            if (pnMenu.Width == 250)
-            {
-                ptbLogo.Visible = false;
-                pnMenu.Visible = false;
-                pnMenu.Width = 45;
+            //if (pnMenu.Width == 250)
+            //{
+            //    ptbLogo.Visible = false;
+            //    pnMenu.Visible = false;
+            //    pnMenu.Width = 45;
+            //    pnTable.Location = new Point(46, 47);
+            //    btnMenu.Location = new Point(10, 19);
+            //    animationMenuClose.ShowSync(pnMenu);
+            //    anmationLogo.ShowSync(btnMenu);
 
-                btnMenu.Location = new Point(10, 19);
-                animationMenuClose.ShowSync(pnMenu);
-                anmationLogo.ShowSync(btnMenu);
-
-            }
+            //}
             animationTable.Hide(pnTable);
             //pnAcount.BringToFront();
         }
@@ -197,6 +259,18 @@ namespace QuanLyQuanCaFe
             int tableID = ((sender as Button).Tag as Table).ID;
             lsvBill.Tag = (sender as Button).Tag;
             ShowBill(tableID);
+            if (pnMenu.Width == 250)
+            {
+                ptbLogo.Visible = false;
+                pnMenu.Visible = false;
+                pnMenu.Width = 45;
+                btnMenu.Location = new Point(10, 19);
+                animationMenuClose.ShowSync(pnMenu);
+                anmationLogo.ShowSync(btnMenu);
+                if (pnTable.Location.X == 250)
+                    pnTable.Location = new Point(46, 44);
+            }
+
         }
 
         private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -233,7 +307,88 @@ namespace QuanLyQuanCaFe
             }
 
             ShowBill(table.ID);
+            LoadTable();
         }
+
+        private void btnThanhtoan_Click(object sender, EventArgs e)
+        {
+            Table table = lsvBill.Tag as Table;
+
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            int discount = (int)nmDiscount.Value;
+           
+            double totalPrice = Convert.ToDouble(tbxTotalPrice.Text.Split(',')[0])*1000;
+            double finaltotalprice = totalPrice - (totalPrice / 100) * discount;
+
+            if(idBill != -1)
+            {
+                if(MessageBox.Show(string.Format("Bạn có chắc thanh toán hoá đơn cho bàn {0}\n Tổng tiền - (Tổng tiền / 100) x Giảm giá = {1} - ({1} / 100 x {2}) = {3}"  , table.Name, totalPrice, discount, finaltotalprice), "Thông báo", MessageBoxButtons.OKCancel)== System.Windows.Forms.DialogResult.OK)
+                {
+                    BillDAO.Instance.CheckOut(idBill, discount, (float)finaltotalprice);
+                    ShowBill(table.ID);
+                }
+            }
+
+            LoadTable();
+        }
+
+        private void btnChuyenban_Click(object sender, EventArgs e)
+        {
+            int id1 = (lsvBill.Tag as Table).ID;
+
+            int id2 = (cbChuyenban.SelectedItem as Table).ID;
+
+            if (MessageBox.Show(string.Format("Bạn có thật sự muốn chuyển bàn {0} qua bàn {1}", (lsvBill.Tag as Table).Name, (cbChuyenban.SelectedItem as Table).Name), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                TableDAO.Instance.SwitchTable(id1, id2);
+
+                LoadTable();
+            }
+        }
+
+        private void pnTable_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnMenu.Width = 45;
+            btnMenu.Location = new Point(10, 19);
+        }
+
+
         #endregion
+
+        private void flpTable_MouseClick(object sender, MouseEventArgs e)
+        {
+            ptbLogo.Visible = false;
+            pnMenu.Visible = false;
+            pnMenu.Width = 45;
+
+            btnMenu.Location = new Point(10, 19);
+            animationMenuClose.ShowSync(pnMenu);
+            anmationLogo.ShowSync(btnMenu);
+            if (pnTable.Location.X == 250)
+                pnTable.Location = new Point(46, 44);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateAccount();
+        }
+
+        private void btnExitAcount_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnAcount_MouseClick(object sender, MouseEventArgs e)
+        {
+            ptbLogo.Visible = false;
+            pnMenu.Visible = false;
+            pnMenu.Width = 45;
+
+            btnMenu.Location = new Point(10, 19);
+            animationMenuClose.ShowSync(pnMenu);
+            anmationLogo.ShowSync(btnMenu);
+            if (pnTable.Location.X == 250)
+                pnTable.Location = new Point(46, 44);
+        }
     }
 }

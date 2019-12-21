@@ -109,12 +109,12 @@
             this.tbxAcount.Name = "tbxAcount";
             this.tbxAcount.Size = new System.Drawing.Size(265, 35);
             this.tbxAcount.TabIndex = 4;
-            this.tbxAcount.Text = "k9";
+            this.tbxAcount.Text = "khanhduyvt0101";
             this.tbxAcount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QuanLyQuanCaFe.Properties.Resources.logo1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(179, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(145, 80);
@@ -179,7 +179,7 @@
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.TargetControl = this.pictureBox1;
             this.bunifuDragControl1.Vertical = true;
             // 
             // fLogin

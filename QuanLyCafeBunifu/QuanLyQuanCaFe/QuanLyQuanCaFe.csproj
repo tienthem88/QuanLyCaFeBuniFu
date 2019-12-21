@@ -59,6 +59,7 @@
     <Compile Include="DAO\FoodDAO.cs" />
     <Compile Include="DAO\MenuDAO.cs" />
     <Compile Include="DAO\TableDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillInfo.cs" />
     <Compile Include="DTO\Category.cs" />
@@ -119,6 +120,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\btnTable.png" />
+    <Content Include="Resources\btnTable11.png" />
+    <Content Include="Resources\btnTable12.png" />
     <None Include="Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png" />
     <None Include="Resources\close+delete+exit+no+remove+stop+icon-1320191167239715440.png" />
     <None Include="Resources\quit-5121.png" />

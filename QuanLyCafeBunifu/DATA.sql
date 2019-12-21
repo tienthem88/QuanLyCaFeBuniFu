@@ -193,7 +193,7 @@ create proc USP_InsertBill
 @idTable int
 as
 begin
-insert Bill (DateCheckIn,DateCheckOut,idTable,status) values (GETDATE(), null,@idTable,0)
+insert Bill (DateCheckIn,DateCheckOut,idTable,status,discount) values (GETDATE(), null,@idTable,0,0)
 end
 go
 
@@ -233,3 +233,151 @@ go
 
 select max(id) from Bill
 
+
+alter TRIGGER UTG_UPDATEBILLINFO
+ON BillInfo FOR INSERT, UPDATE
+AS 
+BEGIN
+	DECLARE @idBill int
+	select @idBill = idBill from inserted
+	declare @idTable int
+	select @idTable = idTable from Bill where id = @idBill and status = 0
+
+	declare @count int
+	select @count = COUNT(*) from BillInfo where idBill = @idBill
+
+	if(@count > 0) 
+		update TableFood set status = N'Có người' where id = @idTable
+	else
+		update TableFood SET status = N'Trống' where id = @idTable
+	
+END
+GO
+
+
+
+CREATE TRIGGER UTG_UpdateBill	
+ON Bill for update
+as
+begin
+	declare @idBill int
+	select @idBill=id from inserted
+	declare @idTable int
+	select @idTable = idTable from Bill where id = @idBill 
+	declare @count int = 0
+	select @count = count(*) from Bill where idTable = @idTable and status = 0
+	if (@count = 0)
+		update TableFood SET status = N'Trống' where id=@idTable
+end 
+go
+
+
+delete Bill
+delete BillInfo
+
+
+alter table Bill
+add	discount int
+
+update Bill set discount = 0
+
+
+select * from Bill
+
+
+alter proc USP_SwitchTable
+@idTable1 int, @idTable2 int
+as begin
+	
+	declare @idFirstBill int 
+	declare @idSecondBill int
+
+	declare @isFirstTableEmpty int = 0
+	declare @isSecondTableEmpty int = 0
+
+	Select @idSecondBill = id  from Bill where idTable = @idTable2 and status = 0
+	Select @idFirstBill = id  from Bill where idTable = @idTable1 and status = 0
+	
+	if(@idFirstBill is null)
+	Begin
+		insert Bill (DateCheckIn, DateCheckOut, idTable, status) values (GETDATE(), NUll, @idTable1, 0)
+		select @idFirstBill = MAX(id) from Bill where idTable = @idTable1 and status = 0
+
+		update TableFood set status = N'Trống' where id = @idTable2
+	END
+
+	select @isFirstTableEmpty = COUNT(*) from BillInfo where idBill = @idFirstBill
+
+	if(@idSecondBill is null)
+	Begin
+		insert Bill (DateCheckIn, DateCheckOut, idTable, status) values (GETDATE(), NUll, @idTable2, 0)
+		select @idSecondBill = MAX(id) from Bill where idTable = @idTable2 and status = 0
+
+		update TableFood set status = N'Trống' where id = @idTable2
+	END
+
+	select @isSecondTableEmpty = COUNT(*) from BillInfo where idBill = @idSecondBill
+
+	select id into IDBillInfoTable from BillInfo where idBill = @idSecondBill 
+
+	update BillInfo set idBill = @idSecondBill where idBill = @idFirstBill
+
+	update BillInfo set idBill = @idFirstBill where id in (select * from IDBillInfoTable)
+
+	drop table IDBillInfoTable
+
+	if(@isFirstTableEmpty = 0)
+		update TableFood set status = N'Trống' where id = @idTable2
+	
+	if(@isSecondTableEmpty = 0)
+		update TableFood set status = N'Trống' where id = @idTable1
+
+end
+go
+
+select *from Bill
+UPDATE dbo.Bill SET DateCheckOut = GETDATE(),  status = 1 ,discount = 20 WHERE id = 43
+
+delete from Bill
+
+alter table Bill add totalPrice float
+
+update TableFood set status = N'Trống'
+
+alter proc USP_GetListBillByDate
+@checkIn date, @checkOut date
+as
+begin
+	select t.name as [Tên bàn], b.totalPrice as [Tổng tiền], DateCheckIn as [Ngày vào], DateCheckOut as [Ngày ra], discount as [Giảm giá %]
+	from Bill b, TableFood t
+	where DateCheckIn >= @checkIn and DateCheckOut <= @checkOut and b.status = 1
+	and t.id = b.idTable
+end
+go
+
+insert Account (UserName, DisplayName, PassWord, Type) values ('khanhduyvt0101', 'Duy Admin', 1, 1) 
+
+alter proc USP_UpdateAccount
+@userName nvarchar(100), @displayName nvarchar(100), @password nvarchar(100), @newPassword nvarchar(100)
+as 
+begin
+	declare @isRightPass int = 0
+
+	select @isRightPass = COUNT(*) from Account where UserName = @userName and PassWord = @password
+
+	if(@isRightPass =1)
+	begin
+		if(@newPassword = null or @newPassword = '')
+		begin
+			update Account set DisplayName = @displayName where UserName = @userName
+		end
+		else
+			update Account set DisplayName = @displayName, PassWord = @newPassword where UserName = @userName
+	end
+end
+go
+
+
+
+select id as [ID] , name as [Tên món], idCategory as [ID Doanh mục], price as [Giá] from Food
+select * from Food
