@@ -20,3 +20,5 @@ G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanC
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.exe
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.pdb
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\Bunifu_UI_v1.5.3.dll
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.ucTable.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.ucAcount.resources

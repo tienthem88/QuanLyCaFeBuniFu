@@ -35,10 +35,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbxPassWord = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tbxAcount = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             this.panel1.Controls.Add(this.tbxAcount);
             this.panel1.Controls.Add(this.lbLogin);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 116);
+            this.panel1.Location = new System.Drawing.Point(223, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(477, 165);
             this.panel1.TabIndex = 4;
@@ -112,16 +112,6 @@
             this.tbxAcount.Text = "khanhduyvt0101";
             this.tbxAcount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(179, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnExit
             // 
             this.btnExit.ActiveBorderThickness = 1;
@@ -140,7 +130,7 @@
             this.btnExit.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(81)))), ((int)(((byte)(89)))));
             this.btnExit.IdleForecolor = System.Drawing.Color.White;
             this.btnExit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(81)))), ((int)(((byte)(89)))));
-            this.btnExit.Location = new System.Drawing.Point(334, 289);
+            this.btnExit.Location = new System.Drawing.Point(581, 183);
             this.btnExit.Margin = new System.Windows.Forms.Padding(5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(119, 41);
@@ -167,7 +157,7 @@
             this.btnLogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.btnLogin.IdleForecolor = System.Drawing.Color.White;
             this.btnLogin.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnLogin.Location = new System.Drawing.Point(205, 289);
+            this.btnLogin.Location = new System.Drawing.Point(440, 183);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(119, 41);
@@ -179,15 +169,25 @@
             // 
             this.bunifuDragControl1.Fixed = true;
             this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.pictureBox1;
-            this.bunifuDragControl1.Vertical = true;
+            this.bunifuDragControl1.TargetControl = this.panel1;
+            this.bunifuDragControl1.Vertical = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLyQuanCaFe.Properties.Resources._79804229_516863478912631_5982905223037845504_n;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 292);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(482, 359);
+            this.ClientSize = new System.Drawing.Size(706, 238);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel1);
@@ -214,7 +214,7 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox tbxPassWord;
         private Bunifu.Framework.UI.BunifuThinButton2 btnExit;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        public Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
 

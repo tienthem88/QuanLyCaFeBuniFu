@@ -381,3 +381,9 @@ go
 
 select id as [ID] , name as [Tên món], idCategory as [ID Doanh mục], price as [Giá] from Food
 select * from Food
+
+update FoodCategory set name = N'Bánh ngọt' where id = 5
+
+INSERT dbo.Account ( UserName, DisplayName, Type )VALUES  ( N'DuyDepTrai', N'DuyDepTrai', 1)
+
+Delete Account where UserName = N'Nguyen'

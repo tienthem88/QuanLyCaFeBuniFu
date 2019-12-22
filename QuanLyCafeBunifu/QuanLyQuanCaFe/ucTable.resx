@@ -117,26 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAYAAAAPvbYNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVHhe7dGhDYRAAADBL+YbwBKCeYNFfv+FHOE0DbAZ
-        MWrlfr7LNmgyN8zcMHPDzA0zN2zOXfZj/M4/IffTOfcp8n7mhpkbZm6YuWHmhpkbZm6YuWHmhpkbZm6Y
-        uWHmhpkbZm6YuWHmhpkbZm6YuWHmhpkbZm6YuWHmhpkbZm7YnLse52Pkve6ncy5N5oaZG2ZumLlZ27gA
-        uPDA/1xgSxwAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="btnLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAApCAYAAAAPvbYNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACdSURBVHhe7dGhDcJQAABR5iAhQbAAvqNU47tFwzZM+Em/
-        7gK9PPHUybu93sugydwwc8PMDTM3zNywOff5Wcf9txNyPJ1zzyLXZ26YuWHmhpkbZm6YuWHmhpkbZm6Y
-        uWHmhpkbZm6YuWHmhpkbZm6YuWHmhpkbZm6YuWHmhpkbZm6YuWHmhs25j+92Grmu4+mcS5O5YeaGmRtm
-        btYy/nYBQxl4ySVcAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

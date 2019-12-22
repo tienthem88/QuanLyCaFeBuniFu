@@ -29,15 +29,15 @@ namespace QuanLyQuanCaFe.DAO
             DataProvider.Instance.ExecuteQuery("USP_SwitchTable @idTable1 , @idTable2", new object[]{id1, id2});
         }
 
-        public List<Table> LoadTableList()
+        public List<DTO.Table> LoadTableList()
         {
-            List<Table> tableList = new List<Table>();
+            List<DTO.Table> tableList = new List<DTO.Table>();
 
             DataTable data = DataProvider.Instance.ExecuteQuery("USP_GetTableList");
 
             foreach (DataRow item in data.Rows)
             {
-                Table table = new Table(item);
+                DTO.Table table = new DTO.Table(item);
                 tableList.Add(table);
             }
 
@@ -46,7 +46,7 @@ namespace QuanLyQuanCaFe.DAO
 
         public Table GetTableByID(int id)
         {
-            Table table = null;
+            DTO.Table table = null;
 
             string query = "select * from TableFood where id =  " + id;
 
@@ -54,36 +54,36 @@ namespace QuanLyQuanCaFe.DAO
 
             foreach (DataRow item in data.Rows)
             {
-                table = new Table(item);
+                table = new DTO.Table(item);
                 return table;
             }
             return table;
         }
 
-        public List<Table> GetTableList()
+        public List<DTO.Table> GetTableList()
         {
-            List<Table> tableList = new List<Table>();
+            List<DTO.Table> tableList = new List<DTO.Table>();
             string query = "select * from dbo.TableFood";
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
-                Table table = new Table(item);
+                DTO.Table table = new DTO.Table(item);
                 tableList.Add(table);
             }
 
             return tableList;
         }
-        public List<Table> SearchTableByName(string name)
+        public List<DTO.Table> SearchTableByName(string name)
         {
-            List<Table> tableList = new List<Table>();
+            List<DTO.Table> tableList = new List<DTO.Table>();
             string query = string.Format("SELECT * FROM dbo.TableFood WHERE dbo.fuConvertToUnsign1(name) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", name);
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 
             foreach (DataRow item in data.Rows)
             {
-                Table table = new Table(item);
+                DTO.Table table = new DTO.Table(item);
                 tableList.Add(table);
             }
 

@@ -166,6 +166,9 @@
   <data name="lock+password+protect+safety+security+icon-13200860451325469661" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock+password+protect+safety+security+icon-13200860451325469661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close+delete+exit+no+remove+stop+icon-13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btw-icon-cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btw-icon-cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,7 +202,7 @@
   <data name="18520654_BuiTrongKhanhDuy_ĐBCT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\18520654_BuiTrongKhanhDuy_ĐBCT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close+delete+exit+no+remove+stop+icon-13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="79804229_516863478912631_5982905223037845504_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\79804229_516863478912631_5982905223037845504_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

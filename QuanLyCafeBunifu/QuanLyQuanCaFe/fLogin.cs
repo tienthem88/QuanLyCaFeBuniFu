@@ -25,7 +25,7 @@ namespace QuanLyQuanCaFe
             string passWord = tbxPassWord.Text;
             if (Login(userName, passWord))
             {
-                Account loginAccount = AccountDAO.Instance.GetAccountByUserName(userName);
+                Account loginAccount = QuanLyQuanCafe.DAO.AccountDAO.Instance.GetAccountByUserName(userName);
                 fTableManager f = new fTableManager(loginAccount);
                 this.Hide();
                 f.ShowDialog();
@@ -40,7 +40,7 @@ namespace QuanLyQuanCaFe
         bool Login(string userName, string passWord)
         {
 
-            return DAO.AccountDAO.Instance.Login(userName, passWord);
+            return QuanLyQuanCafe.DAO.AccountDAO.Instance.Login(userName, passWord);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -113,6 +113,16 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _79804229_516863478912631_5982905223037845504_n {
+            get {
+                object obj = ResourceManager.GetObject("79804229_516863478912631_5982905223037845504_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap admin_icon_0 {
             get {
                 object obj = ResourceManager.GetObject("admin-icon-0", resourceCulture);

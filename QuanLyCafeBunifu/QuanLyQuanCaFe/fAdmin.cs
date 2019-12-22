@@ -1,4 +1,5 @@
-﻿using QuanLyQuanCaFe.DAO;
+﻿using QuanLyQuanCafe.DAO;
+using QuanLyQuanCaFe.DAO;
 using QuanLyQuanCaFe.DTO;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,10 @@ namespace QuanLyQuanCaFe
         public fAdmin()
         {
             InitializeComponent();
+
             Load();
+            
+            
         }
 
         #region Themes
@@ -124,6 +128,10 @@ namespace QuanLyQuanCaFe
             dtgvBill.DataSource = BillDAO.Instance.GetBillListDate(checkIn, checkOut);
         }
 
+        //void LoadAccount()
+        //{
+        //    accountList.DataSource = AccountDAO.Instance.GetListAccount();
+        //}
 
         void LoadListFood()
         {
@@ -390,9 +398,9 @@ namespace QuanLyQuanCaFe
         {
             tableList.DataSource = SearchTableByName(cbFoodFind.Text);
         }
-        List<Table> SearchTableByName(string name)
+        List<DTO.Table> SearchTableByName(string name)
         {
-            List<Table> listTable = TableDAO.Instance.SearchTableByName(name);
+            List<DTO.Table> listTable = TableDAO.Instance.SearchTableByName(name);
             return listTable;
         }
        
@@ -547,7 +555,7 @@ namespace QuanLyQuanCaFe
             if (CheckDataTable())
             {
 
-                string Name = tbxTableName.text;
+                string Name = tbxTableName.text.ToString();
                 string Status = dmStatus.Text;
                 if (TableDAO.Instance.InsertTable(Name, Status))
                 {
@@ -606,93 +614,98 @@ namespace QuanLyQuanCaFe
         #endregion
         #region Insert_Update_Delete_resetPassword_Account
 
-                void AddAccount(string userName, string displayName, int type)
-                {
-                    if (AccountDAO.Instance.InsertAccount(userName, displayName, type))
-                    {
-                        MessageBox.Show("Thêm tài khoản thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Thêm tài khoản thất bại");
-                    }
+        void AddAccount(string userName, string displayName, int type)
+        {
+            if (AccountDAO.Instance.InsertAccount(userName, displayName, type))
+            {
+                MessageBox.Show("Thêm tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Thêm tài khoản thất bại");
+            }
 
-                    LoadAccount();
-                }
+            LoadAccount();
+        }
 
-                void EditAccount(string userName, string displayName, int type)
-                {
-                    if (AccountDAO.Instance.UpdateAccount(userName, displayName, type))
-                    {
-                        MessageBox.Show("Cập nhật tài khoản thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Cập nhật tài khoản thất bại");
-                    }
+        void EditAccount(string userName, string displayName, int type)
+        {
+            if (AccountDAO.Instance.UpdateAccount(userName, displayName, type))
+            {
+                MessageBox.Show("Cập nhật tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật tài khoản thất bại");
+            }
 
-                    LoadAccount();
-                }
+            LoadAccount();
+        }
 
-                void DeleteAccount(string userName)
-                {
-                    if (loginAccount.UserName.Equals(userName))
-                    {
-                        MessageBox.Show("Vui lòng đừng xóa chính bạn chứ");
-                        return;
-                    }
-                    if (AccountDAO.Instance.DeleteAccount(userName))
-                    {
-                        MessageBox.Show("Xóa tài khoản thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Xóa tài khoản thất bại");
-                    }
+        void DeleteAccount(string userName)
+        {
+            if (loginAccount.UserName.Equals(userName))
+            {
+                MessageBox.Show("Vui lòng đừng xóa chính bạn chứ");
+                return;
+            }
+            if (AccountDAO.Instance.DeleteAccount(userName))
+            {
+                MessageBox.Show("Xóa tài khoản thành công");
+            }
+            else
+            {
+                MessageBox.Show("Xóa tài khoản thất bại");
+            }
 
-                    LoadAccount();
-                }
+            LoadAccount();
+        }
 
-                void ResetPass(string userName)
-                {
-                    if (AccountDAO.Instance.ResetPassword(userName))
-                    {
-                        MessageBox.Show("Đặt lại mật khẩu thành công");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Đặt lại mật khẩu thất bại");
-                    }
-                }
+        void ResetPass(string userName)
+        {
+            if (AccountDAO.Instance.ResetPassword(userName))
+            {
+                MessageBox.Show("Đặt lại mật khẩu thành công");
+            }
+            else
+            {
+                MessageBox.Show("Đặt lại mật khẩu thất bại");
+            }
+        }
 
-                private void btnAddAccount_Click(object sender, EventArgs e)
-                {
-                    string userName = tbxNameAcount.Text;
-                    string displayName = tbxDisplayAcount.Text;
-                    int type = (int)numericUpDown1.Value;
+        private void btnAddAccount_Click(object sender, EventArgs e)
+        {
 
-                    AddAccount(userName, displayName, type);
-                }
+            if (CheckDataAccount())
+            {
+                
+                string userName = tbxNameAcount.text;
+                string displayName = tbxDisplayAcount.text;
+                int type = (int)numericUpDown1.Value;
 
-                private void btnFixAccount_Click(object sender, EventArgs e)
-                {
-                    string userName = tbxNameAcount.Text;
-                    string displayName = tbxDisplayAcount.Text;
-                    int type = (int)numericUpDown1.Value;
-                    EditAccount(userName, displayName, type);
-                }
+                AddAccount(userName, displayName, type);
+            }
+        }
 
-                private void btnDeleteAccount_Click(object sender, EventArgs e)
-                {
-                    string userName = tbxNameAcount.Text;
-                    DeleteAccount(userName);
-                }
+        private void btnFixAccount_Click(object sender, EventArgs e)
+        {
+            string userName = tbxNameAcount.text;
+            string displayName = tbxDisplayAcount.text;
+            int type = (int)numericUpDown1.Value;
+            EditAccount(userName, displayName, type);
+        }
 
-                private void btnResetPassword_Click(object sender, EventArgs e)
-                {
-                    string userName = tbxNameAcount.Text;
-                    ResetPass(userName);
-                }
+        private void btnDeleteAccount_Click(object sender, EventArgs e)
+        {
+            string userName = tbxNameAcount.text;
+            DeleteAccount(userName);
+        }
+
+        private void btnResetPassword_Click(object sender, EventArgs e)
+        {
+            string userName = tbxNameAcount.text;
+            ResetPass(userName);
+        }
 
 
         #endregion
