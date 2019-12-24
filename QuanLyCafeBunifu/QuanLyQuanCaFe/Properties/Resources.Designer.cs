@@ -103,6 +103,16 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4_512 {
+            get {
+                object obj = ResourceManager.GetObject("4-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _537_01_512 {
             get {
                 object obj = ResourceManager.GetObject("537-01-512", resourceCulture);
@@ -116,6 +126,16 @@ namespace QuanLyQuanCaFe.Properties {
         internal static System.Drawing.Bitmap _79804229_516863478912631_5982905223037845504_n {
             get {
                 object obj = ResourceManager.GetObject("79804229_516863478912631_5982905223037845504_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aaaaa {
+            get {
+                object obj = ResourceManager.GetObject("aaaaa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +193,29 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coffee_table_30_976468 {
+            get {
+                object obj = ResourceManager.GetObject("coffee-table-30-976468", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_table_33_976476 {
             get {
                 object obj = ResourceManager.GetObject("coffee-table-33-976476", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coffee_table_36_976489 {
+            get {
+                object obj = ResourceManager.GetObject("coffee-table-36-976489", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +366,26 @@ namespace QuanLyQuanCaFe.Properties {
         internal static System.Drawing.Bitmap quit_5121 {
             get {
                 object obj = ResourceManager.GetObject("quit-5121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap source_change_password_icon_115632113989lfjrixlx8 {
+            get {
+                object obj = ResourceManager.GetObject("source-change-password-icon-115632113989lfjrixlx8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap source_change_password_icon_115632113989lfjrixlx81 {
+            get {
+                object obj = ResourceManager.GetObject("source-change-password-icon-115632113989lfjrixlx81", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

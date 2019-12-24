@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucAcount));
             this.pnAcount = new System.Windows.Forms.Panel();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnExitAcount = new Bunifu.Framework.UI.BunifuThinButton2();
             this.tbxRePass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tbxNewPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.tbxPassWord = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -42,13 +40,18 @@
             this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnExitAcount = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.ptbLogo = new System.Windows.Forms.PictureBox();
             this.pnAcount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnAcount
             // 
             this.pnAcount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.pnAcount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnAcount.Controls.Add(this.ptbLogo);
             this.pnAcount.Controls.Add(this.btnUpdate);
             this.pnAcount.Controls.Add(this.btnExitAcount);
             this.pnAcount.Controls.Add(this.tbxRePass);
@@ -66,58 +69,6 @@
             this.pnAcount.Name = "pnAcount";
             this.pnAcount.Size = new System.Drawing.Size(939, 491);
             this.pnAcount.TabIndex = 1;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ActiveBorderThickness = 1;
-            this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.Aqua;
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Cập nhật";
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpdate.IdleBorderThickness = 1;
-            this.btnUpdate.IdleCornerRadius = 20;
-            this.btnUpdate.IdleFillColor = System.Drawing.Color.Aqua;
-            this.btnUpdate.IdleForecolor = System.Drawing.Color.White;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.Aqua;
-            this.btnUpdate.Location = new System.Drawing.Point(721, 435);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(91, 41);
-            this.btnUpdate.TabIndex = 22;
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnExitAcount
-            // 
-            this.btnExitAcount.ActiveBorderThickness = 1;
-            this.btnExitAcount.ActiveCornerRadius = 20;
-            this.btnExitAcount.ActiveFillColor = System.Drawing.Color.Transparent;
-            this.btnExitAcount.ActiveForecolor = System.Drawing.Color.White;
-            this.btnExitAcount.ActiveLineColor = System.Drawing.Color.Aqua;
-            this.btnExitAcount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btnExitAcount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExitAcount.BackgroundImage")));
-            this.btnExitAcount.ButtonText = "Thoát";
-            this.btnExitAcount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExitAcount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitAcount.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnExitAcount.IdleBorderThickness = 1;
-            this.btnExitAcount.IdleCornerRadius = 20;
-            this.btnExitAcount.IdleFillColor = System.Drawing.Color.Aqua;
-            this.btnExitAcount.IdleForecolor = System.Drawing.Color.White;
-            this.btnExitAcount.IdleLineColor = System.Drawing.Color.Aqua;
-            this.btnExitAcount.Location = new System.Drawing.Point(830, 435);
-            this.btnExitAcount.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
-            this.btnExitAcount.Name = "btnExitAcount";
-            this.btnExitAcount.Size = new System.Drawing.Size(91, 41);
-            this.btnExitAcount.TabIndex = 21;
-            this.btnExitAcount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnExitAcount.Click += new System.EventHandler(this.btnExitAcount_Click);
             // 
             // tbxRePass
             // 
@@ -269,6 +220,70 @@
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "Tên đăng nhập:";
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ActiveBorderThickness = 1;
+            this.btnUpdate.ActiveCornerRadius = 20;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.Aqua;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.ButtonText = "Cập nhật";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnUpdate.IdleBorderThickness = 1;
+            this.btnUpdate.IdleCornerRadius = 20;
+            this.btnUpdate.IdleFillColor = System.Drawing.Color.Aqua;
+            this.btnUpdate.IdleForecolor = System.Drawing.Color.White;
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.Aqua;
+            this.btnUpdate.Location = new System.Drawing.Point(422, 439);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 41);
+            this.btnUpdate.TabIndex = 22;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnExitAcount
+            // 
+            this.btnExitAcount.ActiveBorderThickness = 1;
+            this.btnExitAcount.ActiveCornerRadius = 20;
+            this.btnExitAcount.ActiveFillColor = System.Drawing.Color.Transparent;
+            this.btnExitAcount.ActiveForecolor = System.Drawing.Color.White;
+            this.btnExitAcount.ActiveLineColor = System.Drawing.Color.Aqua;
+            this.btnExitAcount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnExitAcount.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExitAcount.BackgroundImage")));
+            this.btnExitAcount.ButtonText = "Thoát";
+            this.btnExitAcount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExitAcount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExitAcount.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnExitAcount.IdleBorderThickness = 1;
+            this.btnExitAcount.IdleCornerRadius = 20;
+            this.btnExitAcount.IdleFillColor = System.Drawing.Color.Aqua;
+            this.btnExitAcount.IdleForecolor = System.Drawing.Color.White;
+            this.btnExitAcount.IdleLineColor = System.Drawing.Color.Aqua;
+            this.btnExitAcount.Location = new System.Drawing.Point(544, 439);
+            this.btnExitAcount.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
+            this.btnExitAcount.Name = "btnExitAcount";
+            this.btnExitAcount.Size = new System.Drawing.Size(91, 41);
+            this.btnExitAcount.TabIndex = 21;
+            this.btnExitAcount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExitAcount.Click += new System.EventHandler(this.btnExitAcount_Click);
+            // 
+            // ptbLogo
+            // 
+            this.ptbLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ptbLogo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ptbLogo.Image = global::QuanLyQuanCaFe.Properties.Resources._79804229_516863478912631_5982905223037845504_n;
+            this.ptbLogo.Location = new System.Drawing.Point(664, 0);
+            this.ptbLogo.Name = "ptbLogo";
+            this.ptbLogo.Size = new System.Drawing.Size(275, 491);
+            this.ptbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbLogo.TabIndex = 23;
+            this.ptbLogo.TabStop = false;
+            // 
             // ucAcount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,6 +293,7 @@
             this.Size = new System.Drawing.Size(939, 491);
             this.pnAcount.ResumeLayout(false);
             this.pnAcount.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +313,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.PictureBox ptbLogo;
     }
 }

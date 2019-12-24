@@ -136,14 +136,17 @@
   <data name="deuce-icons-update-quit-png-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deuce-icons-update-quit-png-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cup2-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cup2-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coffee-table-30-976468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee-table-30-976468.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1041139-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1041139-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="my-account-icon-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\my-account-icon-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cup2-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cup2-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,17 +163,20 @@
   <data name="black-and-white-food-icon-png-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\black-and-white-food-icon-png-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="source-change-password-icon-115632113989lfjrixlx8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source-change-password-icon-115632113989lfjrixlx8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Thoi Khoa Bieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thoi Khoa Bieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lock+password+protect+safety+security+icon-13200860451325469661" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock+password+protect+safety+security+icon-13200860451325469661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close+delete+exit+no+remove+stop+icon-13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="btw-icon-cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btw-icon-cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close+delete+exit+no+remove+stop+icon-13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lock+password+protect+safety+security+icon-1320086045132546966" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lock+password+protect+safety+security+icon-1320086045132546966.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +187,17 @@
   <data name="admin-icon-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin-icon-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="coffee-table-36-976489" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee-table-36-976489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cup2-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cup2-512.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,13 +211,16 @@
   <data name="quit-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quit-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="79804229_516863478912631_5982905223037845504_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\79804229_516863478912631_5982905223037845504_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="quit-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="18520654_BuiTrongKhanhDuy_ĐBCT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\18520654_BuiTrongKhanhDuy_ĐBCT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="79804229_516863478912631_5982905223037845504_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\79804229_516863478912631_5982905223037845504_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="source-change-password-icon-115632113989lfjrixlx81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source-change-password-icon-115632113989lfjrixlx81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

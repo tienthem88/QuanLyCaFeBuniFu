@@ -29,7 +29,7 @@ namespace QuanLyQuanCaFe
             set { loginAccount = value; ChangeAccountAdmin(loginAccount.Type); }
         }
 
-
+        public static int checktemp=0;
 
         public fTableManager(Account acc)
         {
@@ -61,10 +61,11 @@ namespace QuanLyQuanCaFe
 
 
         #region Events
-        private void ptbExit_Click(object sender, EventArgs e)
+        private void ptbExit_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
+       
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
@@ -78,20 +79,32 @@ namespace QuanLyQuanCaFe
                 animationMenuOpen.ShowSync(pnMenu);
                 anmationLogo.ShowSync(btnMenu);
                 ptbLogo.Visible = true;
-                pnTheme.Location = new Point(46, 42);
+                pnTheme.Location = new Point(46, 36);
+                btnTable.Location = new Point(12, 200);
+                btnInformation.Location = new Point(12, 270);
+                btnAdmin.Location = new Point(12, 340);
+                Sperate.Visible = true;
+                ptbLogo.Location = new Point(49, 19);
+                ptbLogo.Size = new Size(146, 141);
+                ptbxLogoMini.Visible = false;
 
             }
             else
             {
-                
+                Sperate.Visible = false;
                 ptbLogo.Visible = false;
                 pnMenu.Visible = false;
                 pnMenu.Width = 45;
-
+                btnTable.Location = new Point(0, 200);
+                btnInformation.Location = new Point(0, 270);
+                btnAdmin.Location = new Point(0, 340);
                 btnMenu.Location = new Point(10, 19);
                 animationMenuClose.ShowSync(pnMenu);
                 anmationLogo.ShowSync(btnMenu);
-                pnTheme.Location = new Point(46, 42);
+                pnTheme.Location = new Point(46, 36);
+                ptbxLogoMini.Visible = true;
+
+
 
             }
 
@@ -99,6 +112,7 @@ namespace QuanLyQuanCaFe
 
         private void btnTable_Click(object sender, EventArgs e)
         {
+            setSelectForecolor((Bunifu.Framework.UI.BunifuFlatButton)sender);
             pnTheme.Location = new Point(46, 42);
             pnTheme.Controls.Clear();
             ucTable uctable = new ucTable();
@@ -113,17 +127,35 @@ namespace QuanLyQuanCaFe
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            setSelectForecolor((Bunifu.Framework.UI.BunifuFlatButton)sender);
             fAdmin a = new fAdmin();
             a.loginAccount = LoginAccount;
             this.Hide();
             a.ShowDialog();
             this.Show();
+            
+
+
+        }
+
+       
+        void setSelectForecolor(Bunifu.Framework.UI.BunifuFlatButton sender)
+        {
+
+            btnTable.selected = false;
+            btnInformation.selected = false;
+            btnAdmin.selected = false;
+            btnTable.Textcolor = Color.DimGray;
+            btnInformation.Textcolor = Color.DimGray;
+            btnAdmin.Textcolor = Color.DimGray;
+            sender.selected = true;
+            sender.Textcolor = Color.White;
 
         }
 
         private void btnInformation_Click(object sender, EventArgs e)
         {
-            
+            setSelectForecolor((Bunifu.Framework.UI.BunifuFlatButton)sender);
             pnTheme.Controls.Clear();
             ucAcount ucAcount = new ucAcount();
             ucAcount.LoginAccount = LoginAccount;
@@ -137,11 +169,30 @@ namespace QuanLyQuanCaFe
 
         }
 
+
+
+
+
+
         #endregion
 
-
-
-
-
+        private void pnTheme_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(checktemp==1)
+            {
+                Sperate.Visible = false;
+                ptbLogo.Visible = false;
+                pnMenu.Visible = false;
+                pnMenu.Width = 45;
+                btnTable.Location = new Point(0, 200);
+                btnInformation.Location = new Point(0, 270);
+                btnAdmin.Location = new Point(0, 340);
+                btnMenu.Location = new Point(10, 19);
+                animationMenuClose.ShowSync(pnMenu);
+                anmationLogo.ShowSync(btnMenu);
+                pnTheme.Location = new Point(46, 36);
+                ptbxLogoMini.Visible = true;
+            }
+        }
     }
 }

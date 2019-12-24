@@ -197,8 +197,12 @@ namespace QuanLyQuanCaFe
             }
         }
 
+
         #endregion
 
-
+        private void flpTable_MouseClick(object sender, MouseEventArgs e)
+        {
+            fTableManager.checktemp = 1;
+        }
     }
 }

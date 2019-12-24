@@ -137,7 +137,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\source-change-password-icon-115632113989lfjrixlx81.png" />
+    <None Include="Resources\source-change-password-icon-115632113989lfjrixlx8.png" />
+    <None Include="Resources\coffee-table-36-976489.png" />
+    <None Include="Resources\coffee-table-30-976468.png" />
     <None Include="Resources\79804229_516863478912631_5982905223037845504_n.png" />
+    <None Include="Resources\4-512.png" />
+    <None Include="Resources\aaaaa.png" />
     <Content Include="Resources\btnTable.png" />
     <Content Include="Resources\btnTable11.png" />
     <Content Include="Resources\btnTable12.png" />
