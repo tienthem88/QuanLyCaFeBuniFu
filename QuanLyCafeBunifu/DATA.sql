@@ -387,3 +387,9 @@ update FoodCategory set name = N'Bánh ngọt' where id = 5
 INSERT dbo.Account ( UserName, DisplayName, Type )VALUES  ( N'DuyDepTrai', N'DuyDepTrai', 1)
 
 Delete Account where UserName = N'Nguyen'
+
+
+delete TableFood where id = '23'
+
+delete from Bill 
+

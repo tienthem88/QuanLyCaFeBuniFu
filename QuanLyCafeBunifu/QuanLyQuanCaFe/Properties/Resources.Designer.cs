@@ -103,6 +103,16 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _39_512 {
+            get {
+                object obj = ResourceManager.GetObject("39-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4_512 {
             get {
                 object obj = ResourceManager.GetObject("4-512", resourceCulture);
@@ -123,6 +133,16 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _585e4ae9cb11b227491c3394 {
+            get {
+                object obj = ResourceManager.GetObject("585e4ae9cb11b227491c3394", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _79804229_516863478912631_5982905223037845504_n {
             get {
                 object obj = ResourceManager.GetObject("79804229_516863478912631_5982905223037845504_n", resourceCulture);
@@ -133,9 +153,29 @@ namespace QuanLyQuanCaFe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _79804229_516863478912631_5982905223037845504_n1 {
+            get {
+                object obj = ResourceManager.GetObject("79804229_516863478912631_5982905223037845504_n1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aaaaa {
             get {
                 object obj = ResourceManager.GetObject("aaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_plus_512 {
+            get {
+                object obj = ResourceManager.GetObject("add_plus-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +276,16 @@ namespace QuanLyQuanCaFe.Properties {
         internal static System.Drawing.Bitmap cup2_5121 {
             get {
                 object obj = ResourceManager.GetObject("cup2-5121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_1432400_1211078 {
+            get {
+                object obj = ResourceManager.GetObject("delete-1432400-1211078", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +456,16 @@ namespace QuanLyQuanCaFe.Properties {
         internal static System.Drawing.Bitmap Thoi_Khoa_Bieu {
             get {
                 object obj = ResourceManager.GetObject("Thoi Khoa Bieu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visibility_512 {
+            get {
+                object obj = ResourceManager.GetObject("visibility-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,3 +22,9 @@ G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\QuanLyQuanC
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\Resources\Bunifu_UI_v1.5.3.dll
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.ucTable.resources
 G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.ucAcount.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucAdmin.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucDoanhThu.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucThucAn.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucDanhMuc.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucBanAn.resources
+G:\Github\QuanLyCaFeBuniFu\QuanLyCafeBunifu\QuanLyQuanCaFe\obj\Debug\QuanLyQuanCaFe.UI.UC_Admin.ucAccount.resources

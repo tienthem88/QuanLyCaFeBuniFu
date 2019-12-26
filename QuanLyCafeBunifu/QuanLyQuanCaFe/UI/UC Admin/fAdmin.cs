@@ -24,10 +24,10 @@ namespace QuanLyQuanCaFe
         public fAdmin()
         {
             InitializeComponent();
-
+           
             Load();
             
-            
+
         }
 
         #region Themes

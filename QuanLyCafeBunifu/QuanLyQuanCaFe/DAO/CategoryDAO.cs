@@ -38,6 +38,23 @@ namespace QuanLyQuanCaFe.DAO
             return list;
         }
 
+        public List<Category> SearchCategoryByName(string name)
+        {
+            List<Category> list = new List<Category>();
+
+            string query = string.Format("SELECT * FROM dbo.Category WHERE dbo.fuConvertToUnsign1(name) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", name);
+
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Category category = new Category(item);
+                list.Add(category);
+            }
+
+            return list;
+        }
+
         public Category GetCategoryByID(int id)
         {
             Category category = null;
@@ -83,7 +100,7 @@ namespace QuanLyQuanCaFe.DAO
         }
         public bool DeleteCategory(int idCategory)
         {
-            string query = string.Format("delete FoodCategory where id = '{0}')", idCategory);
+            string query = string.Format("delete FoodCategory where id = '{0}'", idCategory);
 
             int result = DataProvider.Instance.ExecuteNonQuery(query);
             return result > 0;

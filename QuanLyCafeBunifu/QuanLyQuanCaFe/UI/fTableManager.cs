@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Menu = QuanLyQuanCaFe.DTO.Menu;
 using Bunifu;
+using QuanLyQuanCaFe.UI.UC_Admin;
 
 namespace QuanLyQuanCaFe
 {
@@ -27,6 +28,7 @@ namespace QuanLyQuanCaFe
         {
             get { return loginAccount; }
             set { loginAccount = value; ChangeAccountAdmin(loginAccount.Type); }
+
         }
 
         public static int checktemp=0;
@@ -34,7 +36,7 @@ namespace QuanLyQuanCaFe
         public fTableManager(Account acc)
         {
             InitializeComponent();
-
+            this.KeyPreview = true;
             this.LoginAccount = acc;
             pnTheme.Controls.Clear();
             ucTable uctable = new ucTable();
@@ -113,7 +115,7 @@ namespace QuanLyQuanCaFe
         private void btnTable_Click(object sender, EventArgs e)
         {
             setSelectForecolor((Bunifu.Framework.UI.BunifuFlatButton)sender);
-            pnTheme.Location = new Point(46, 42);
+            pnTheme.Location = new Point(46, 36);
             pnTheme.Controls.Clear();
             ucTable uctable = new ucTable();
             uctable.Dock = DockStyle.Fill;
@@ -127,13 +129,25 @@ namespace QuanLyQuanCaFe
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            //fAdmin a = new fAdmin();
+            //a.loginAccount = LoginAccount;
+            //this.Hide();
+            //a.ShowDialog();
+            //this.Show();
+
+
             setSelectForecolor((Bunifu.Framework.UI.BunifuFlatButton)sender);
-            fAdmin a = new fAdmin();
-            a.loginAccount = LoginAccount;
-            this.Hide();
-            a.ShowDialog();
-            this.Show();
-            
+            ucAdmin ucadmin = new ucAdmin();
+            ucadmin.loginAccount = LoginAccount;
+            pnTheme.Location = new Point(46, 36);
+            pnTheme.Controls.Clear();
+
+            ucadmin.Dock = DockStyle.Fill;
+            ucadmin.Visible = false;
+            pnTheme.Controls.Add(ucadmin);
+
+            animationTable.ShowSync(ucadmin);
+
 
 
         }
@@ -169,11 +183,6 @@ namespace QuanLyQuanCaFe
 
         }
 
-
-
-
-
-
         #endregion
 
         private void pnTheme_MouseMove(object sender, MouseEventArgs e)
@@ -192,6 +201,30 @@ namespace QuanLyQuanCaFe
                 anmationLogo.ShowSync(btnMenu);
                 pnTheme.Location = new Point(46, 36);
                 ptbxLogoMini.Visible = true;
+            }
+        }
+
+        private void fTableManager_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.Equals(Keys.Tab))
+            {
+                btnMenu_Click(this, new EventArgs());
+            }
+            if (e.Control)
+            {
+
+                if (e.KeyCode.Equals(Keys.T))
+                {
+                    btnTable_Click(this, new EventArgs());
+                }
+                if (e.KeyCode.Equals(Keys.I))
+                {
+                    btnInformation_Click(this, new EventArgs());
+                }
+                if (e.KeyCode.Equals(Keys.A))
+                {
+                    btnAdmin_Click(this, new EventArgs());
+                }
             }
         }
     }

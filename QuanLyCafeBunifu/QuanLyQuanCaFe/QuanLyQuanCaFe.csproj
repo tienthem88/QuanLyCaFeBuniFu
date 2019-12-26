@@ -66,10 +66,34 @@
     <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
-    <Compile Include="fAdmin.cs">
+    <Compile Include="UI\UC Admin\ucAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucAccount.Designer.cs">
+      <DependentUpon>ucAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucBanAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucBanAn.Designer.cs">
+      <DependentUpon>ucBanAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucDanhMuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucDanhMuc.Designer.cs">
+      <DependentUpon>ucDanhMuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucAdmin.Designer.cs">
+      <DependentUpon>ucAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC Admin\fAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAdmin.Designer.cs">
+    <Compile Include="UI\UC Admin\fAdmin.Designer.cs">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="fLogin.cs">
@@ -78,33 +102,57 @@
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fTableManager.cs">
+    <Compile Include="UI\fTableManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fTableManager.Designer.cs">
+    <Compile Include="UI\fTableManager.Designer.cs">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ucTable.cs">
+    <Compile Include="UI\UC Admin\ucDoanhThu.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucTable.Designer.cs">
+    <Compile Include="UI\UC Admin\ucDoanhThu.Designer.cs">
+      <DependentUpon>ucDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucThucAn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UC Admin\ucThucAn.Designer.cs">
+      <DependentUpon>ucThucAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ucTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ucTable.Designer.cs">
       <DependentUpon>ucTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucAcount.cs">
+    <Compile Include="UI\ucAcount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucAcount.Designer.cs">
+    <Compile Include="UI\ucAcount.Designer.cs">
       <DependentUpon>ucAcount.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fAdmin.resx">
+    <EmbeddedResource Include="UI\UC Admin\ucAccount.resx">
+      <DependentUpon>ucAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC Admin\ucBanAn.resx">
+      <DependentUpon>ucBanAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC Admin\ucDanhMuc.resx">
+      <DependentUpon>ucDanhMuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC Admin\ucAdmin.resx">
+      <DependentUpon>ucAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC Admin\fAdmin.resx">
       <DependentUpon>fAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fTableManager.resx">
+    <EmbeddedResource Include="UI\fTableManager.resx">
       <DependentUpon>fTableManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,10 +165,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ucTable.resx">
+    <EmbeddedResource Include="UI\UC Admin\ucDoanhThu.resx">
+      <DependentUpon>ucDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UC Admin\ucThucAn.resx">
+      <DependentUpon>ucThucAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ucTable.resx">
       <DependentUpon>ucTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucAcount.resx">
+    <EmbeddedResource Include="UI\ucAcount.resx">
       <DependentUpon>ucAcount.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -137,6 +191,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\delete-1432400-1211078.png" />
+    <None Include="Resources\visibility-512.png" />
     <None Include="Resources\source-change-password-icon-115632113989lfjrixlx81.png" />
     <None Include="Resources\source-change-password-icon-115632113989lfjrixlx8.png" />
     <None Include="Resources\coffee-table-36-976489.png" />
@@ -144,6 +200,10 @@
     <None Include="Resources\79804229_516863478912631_5982905223037845504_n.png" />
     <None Include="Resources\4-512.png" />
     <None Include="Resources\aaaaa.png" />
+    <None Include="Resources\79804229_516863478912631_5982905223037845504_n1.png" />
+    <None Include="Resources\585e4ae9cb11b227491c3394.png" />
+    <None Include="Resources\39-512.png" />
+    <None Include="Resources\add_plus-512.png" />
     <Content Include="Resources\btnTable.png" />
     <Content Include="Resources\btnTable11.png" />
     <Content Include="Resources\btnTable12.png" />
@@ -224,5 +284,6 @@
   <ItemGroup>
     <None Include="Resources\profile-silhouette-vector-21.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
