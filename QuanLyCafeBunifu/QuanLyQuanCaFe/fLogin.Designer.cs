@@ -1,4 +1,6 @@
-﻿namespace QuanLyQuanCaFe
+﻿
+
+namespace QuanLyQuanCaFe
 {
     partial class fLogin
     {
@@ -54,7 +56,7 @@
             this.lbLogin.Location = new System.Drawing.Point(23, 27);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(157, 34);
-            this.lbLogin.TabIndex = 1;
+            this.lbLogin.TabIndex = 5;
             this.lbLogin.Text = "Tài khoản:";
             // 
             // label1
@@ -65,7 +67,7 @@
             this.label1.Location = new System.Drawing.Point(23, 108);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 34);
-            this.label1.TabIndex = 2;
+            this.label1.TabIndex = 5;
             this.label1.Text = "Mật khẩu:";
             // 
             // panel1
@@ -99,7 +101,7 @@
             this.tbxPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.tbxPassWord.Name = "tbxPassWord";
             this.tbxPassWord.Size = new System.Drawing.Size(265, 35);
-            this.tbxPassWord.TabIndex = 5;
+            this.tbxPassWord.TabIndex = 1;
             this.tbxPassWord.Text = "1";
             this.tbxPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -143,7 +145,7 @@
             this.tbxAcount.Margin = new System.Windows.Forms.Padding(4);
             this.tbxAcount.Name = "tbxAcount";
             this.tbxAcount.Size = new System.Drawing.Size(265, 35);
-            this.tbxAcount.TabIndex = 4;
+            this.tbxAcount.TabIndex = 0;
             this.tbxAcount.Text = "khanhduyvt0101";
             this.tbxAcount.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -222,6 +224,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.fLogin_KeyUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

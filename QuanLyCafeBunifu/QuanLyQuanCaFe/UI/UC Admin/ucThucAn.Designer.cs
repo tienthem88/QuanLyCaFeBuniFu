@@ -28,30 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucThucAn));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFindFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.cbFoodFind = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.dtgvFood = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.cbCategoryFood = new System.Windows.Forms.ComboBox();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbDisplay = new System.Windows.Forms.Label();
-            this.tbxTemp = new System.Windows.Forms.TextBox();
             this.btnDeleteFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnAddFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnFixFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnShowFood = new Bunifu.Framework.UI.BunifuImageButton();
             this.tbxPriceFood = new Bunifu.Framework.UI.BunifuTextbox();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cbCategoryFood = new System.Windows.Forms.ComboBox();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tbxFoodName = new Bunifu.Framework.UI.BunifuTextbox();
             this.tbxIDFood = new Bunifu.Framework.UI.BunifuTextbox();
-            this.btnFindFood = new Bunifu.Framework.UI.BunifuImageButton();
+            this.tbxTemp = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFindFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFixFood)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShowFood)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFindFood)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,6 +72,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(489, 34);
             this.panel1.TabIndex = 0;
+            // 
+            // btnFindFood
+            // 
+            this.btnFindFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.btnFindFood.Image = global::QuanLyQuanCaFe.Properties.Resources._585e4ae9cb11b227491c3394;
+            this.btnFindFood.ImageActive = null;
+            this.btnFindFood.Location = new System.Drawing.Point(462, 3);
+            this.btnFindFood.Name = "btnFindFood";
+            this.btnFindFood.Size = new System.Drawing.Size(24, 28);
+            this.btnFindFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFindFood.TabIndex = 29;
+            this.btnFindFood.TabStop = false;
+            this.btnFindFood.Zoom = 10;
+            this.btnFindFood.Click += new System.EventHandler(this.btnFindFood_Click);
             // 
             // cbFoodFind
             // 
@@ -94,19 +108,19 @@
             // 
             // dtgvFood
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dtgvFood.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dtgvFood.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvFood.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvFood.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dtgvFood.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvFood.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvFood.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dtgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvFood.Dock = System.Windows.Forms.DockStyle.Left;
             this.dtgvFood.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -150,60 +164,6 @@
             this.panel3.Size = new System.Drawing.Size(489, 415);
             this.panel3.TabIndex = 29;
             // 
-            // bunifuCustomLabel4
-            // 
-            this.bunifuCustomLabel4.AutoSize = true;
-            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(143, 379);
-            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
-            this.bunifuCustomLabel4.Size = new System.Drawing.Size(42, 21);
-            this.bunifuCustomLabel4.TabIndex = 17;
-            this.bunifuCustomLabel4.Text = "Giá:";
-            // 
-            // cbCategoryFood
-            // 
-            this.cbCategoryFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.cbCategoryFood.ForeColor = System.Drawing.Color.White;
-            this.cbCategoryFood.FormattingEnabled = true;
-            this.cbCategoryFood.Location = new System.Drawing.Point(252, 258);
-            this.cbCategoryFood.Name = "cbCategoryFood";
-            this.cbCategoryFood.Size = new System.Drawing.Size(225, 21);
-            this.cbCategoryFood.TabIndex = 21;
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(143, 258);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(95, 21);
-            this.bunifuCustomLabel3.TabIndex = 16;
-            this.bunifuCustomLabel3.Text = "Danh mục:";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(143, 137);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(81, 21);
-            this.bunifuCustomLabel2.TabIndex = 15;
-            this.bunifuCustomLabel2.Text = "Tên món:";
-            // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(143, 32);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(31, 21);
-            this.bunifuCustomLabel1.TabIndex = 14;
-            this.bunifuCustomLabel1.Text = "ID:";
-            // 
             // lbDisplay
             // 
             this.lbDisplay.AutoSize = true;
@@ -215,15 +175,6 @@
             this.lbDisplay.TabIndex = 34;
             this.lbDisplay.Text = "Xem";
             this.lbDisplay.Visible = false;
-            // 
-            // tbxTemp
-            // 
-            this.tbxTemp.Location = new System.Drawing.Point(207, 137);
-            this.tbxTemp.Name = "tbxTemp";
-            this.tbxTemp.Size = new System.Drawing.Size(100, 20);
-            this.tbxTemp.TabIndex = 35;
-            this.tbxTemp.Visible = false;
-            this.tbxTemp.TextChanged += new System.EventHandler(this.tbxTemp_TextChanged);
             // 
             // btnDeleteFood
             // 
@@ -298,6 +249,60 @@
             this.tbxPriceFood.TabIndex = 20;
             this.tbxPriceFood.text = "";
             // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(143, 379);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(42, 21);
+            this.bunifuCustomLabel4.TabIndex = 17;
+            this.bunifuCustomLabel4.Text = "Giá:";
+            // 
+            // cbCategoryFood
+            // 
+            this.cbCategoryFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
+            this.cbCategoryFood.ForeColor = System.Drawing.Color.White;
+            this.cbCategoryFood.FormattingEnabled = true;
+            this.cbCategoryFood.Location = new System.Drawing.Point(252, 258);
+            this.cbCategoryFood.Name = "cbCategoryFood";
+            this.cbCategoryFood.Size = new System.Drawing.Size(225, 21);
+            this.cbCategoryFood.TabIndex = 21;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(143, 258);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(95, 21);
+            this.bunifuCustomLabel3.TabIndex = 16;
+            this.bunifuCustomLabel3.Text = "Danh mục:";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(143, 137);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(81, 21);
+            this.bunifuCustomLabel2.TabIndex = 15;
+            this.bunifuCustomLabel2.Text = "Tên món:";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(216)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(143, 32);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(31, 21);
+            this.bunifuCustomLabel1.TabIndex = 14;
+            this.bunifuCustomLabel1.Text = "ID:";
+            // 
             // tbxFoodName
             // 
             this.tbxFoodName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
@@ -324,19 +329,13 @@
             this.tbxIDFood.TabIndex = 18;
             this.tbxIDFood.text = "";
             // 
-            // btnFindFood
+            // tbxTemp
             // 
-            this.btnFindFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.btnFindFood.Image = global::QuanLyQuanCaFe.Properties.Resources._585e4ae9cb11b227491c3394;
-            this.btnFindFood.ImageActive = null;
-            this.btnFindFood.Location = new System.Drawing.Point(462, 3);
-            this.btnFindFood.Name = "btnFindFood";
-            this.btnFindFood.Size = new System.Drawing.Size(24, 28);
-            this.btnFindFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFindFood.TabIndex = 29;
-            this.btnFindFood.TabStop = false;
-            this.btnFindFood.Zoom = 10;
-            this.btnFindFood.Click += new System.EventHandler(this.btnFindFood_Click);
+            this.tbxTemp.Location = new System.Drawing.Point(191, 146);
+            this.tbxTemp.Name = "tbxTemp";
+            this.tbxTemp.Size = new System.Drawing.Size(100, 20);
+            this.tbxTemp.TabIndex = 35;
+            this.tbxTemp.TextChanged += new System.EventHandler(this.tbxTemp_TextChanged);
             // 
             // ucThucAn
             // 
@@ -346,6 +345,7 @@
             this.Name = "ucThucAn";
             this.Size = new System.Drawing.Size(944, 449);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnFindFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -355,7 +355,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnAddFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFixFood)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShowFood)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnFindFood)).EndInit();
             this.ResumeLayout(false);
 
         }

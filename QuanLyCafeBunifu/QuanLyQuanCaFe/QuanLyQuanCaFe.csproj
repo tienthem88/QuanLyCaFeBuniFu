@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>C:\Users\Duy\Desktop\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -66,6 +81,11 @@
     <Compile Include="DTO\Food.cs" />
     <Compile Include="DTO\Menu.cs" />
     <Compile Include="DTO\Table.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\UC Admin\ucAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,14 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UI\UC Admin\ucDoanhThu.resx">
       <DependentUpon>ucDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +206,50 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image\visibility-512.png" />
+    <None Include="Resources\image\Thoi Khoa Bieu.png" />
+    <None Include="Resources\image\table.png" />
+    <None Include="Resources\image\source-change-password-icon-115632113989lfjrixlx81.png" />
+    <None Include="Resources\image\source-change-password-icon-115632113989lfjrixlx8.png" />
+    <None Include="Resources\image\quit-5121.png" />
+    <None Include="Resources\image\quit-512.png" />
+    <None Include="Resources\image\profile-silhouette-vector-21.png" />
+    <None Include="Resources\image\my-account-icon-11.png" />
+    <None Include="Resources\image\mobile-nav-icon.png" />
+    <None Include="Resources\image\logo1.jpg" />
+    <None Include="Resources\image\logo.jpg" />
+    <None Include="Resources\image\lock+password+protect+safety+security+icon-13200860451325469661.png" />
+    <None Include="Resources\image\lock+password+protect+safety+security+icon-1320086045132546966.png" />
+    <None Include="Resources\image\img_186707.png" />
+    <None Include="Resources\image\icon-account-13.png" />
+    <None Include="Resources\image\entoni_quit-512.png" />
+    <None Include="Resources\image\deuce-icons-update-quit-png-icon.jpg" />
+    <None Include="Resources\image\delete-1432400-1211078.png" />
+    <None Include="Resources\image\cup2-512.png" />
+    <None Include="Resources\image\cup2-512.jpg" />
+    <None Include="Resources\image\coffee-table-36-976489.png" />
+    <None Include="Resources\image\coffee-table-33-976476.png" />
+    <None Include="Resources\image\coffee-table-30-976468.png" />
+    <None Include="Resources\image\close+delete+exit+no+remove+stop+icon-13201911672397154401.png" />
+    <None Include="Resources\image\close+delete+exit+no+remove+stop+icon-1320191167239715440.png" />
+    <None Include="Resources\image\btw-icon-cafe.png" />
+    <None Include="Resources\image\btnTable12.png" />
+    <None Include="Resources\image\btnTable11.png" />
+    <None Include="Resources\image\btnTable.png" />
+    <None Include="Resources\image\black-and-white-food-icon-png-5.png" />
+    <None Include="Resources\image\admin-icon-0.png" />
+    <None Include="Resources\image\add_plus-512.png" />
+    <None Include="Resources\image\aaaaa.png" />
+    <None Include="Resources\image\79804229_516863478912631_5982905223037845504_n1.png" />
+    <None Include="Resources\image\79804229_516863478912631_5982905223037845504_n.png" />
+    <None Include="Resources\image\18520654_BuiTrongKhanhDuy_ĐBCT.png" />
+    <None Include="Resources\image\14606432_2116158135276700_7916135508485757105_n.jpg" />
+    <None Include="Resources\image\1041139-200.png" />
+    <None Include="Resources\image\159635-200.png" />
+    <None Include="Resources\image\585e4ae9cb11b227491c3394.png" />
+    <None Include="Resources\image\537-01-512.png" />
+    <None Include="Resources\image\39-512.png" />
+    <None Include="Resources\image\4-512.png" />
     <None Include="Resources\delete-1432400-1211078.png" />
     <None Include="Resources\visibility-512.png" />
     <None Include="Resources\source-change-password-icon-115632113989lfjrixlx81.png" />
@@ -284,6 +343,17 @@
   <ItemGroup>
     <None Include="Resources\profile-silhouette-vector-21.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

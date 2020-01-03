@@ -39,33 +39,13 @@ namespace QuanLyQuanCaFe.UI.UC_Admin
         {
             //string x = tbxIDFood.text;
             tbxFoodName.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Name"));
-            tbxIDFood.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID"));
+            //tbxIDFood.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID"));
             tbxTemp.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID"));
+            tbxIDFood.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID"));
             tbxPriceFood.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Price"));
             //string y = tbxIDFood.text;
 
-            if (dtgvFood.SelectedCells.Count > 0)
-            {
-                int id = (int)dtgvFood.SelectedCells[0].OwningRow.Cells["CategoryID"].Value;
-
-                Category category = CategoryDAO.Instance.GetCategoryByID(id);
-
-                cbCategoryFood.SelectedItem = category;
-
-                int index = -1;
-                int i = 0;
-                foreach (Category item in cbCategoryFood.Items)
-                {
-                    if (item.ID == category.ID)
-                    {
-                        index = i;
-                        break;
-                    }
-                    i++;
-                }
-
-                cbCategoryFood.SelectedIndex = index;
-            }
+           
 
 
         }

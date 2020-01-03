@@ -45,7 +45,7 @@
             this.btnChuyenban = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cbChuyenban = new System.Windows.Forms.ComboBox();
             this.tbxTotalPrice = new System.Windows.Forms.TextBox();
-            this.btnDiscound = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnXoaMon = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnThanhtoan = new Bunifu.Framework.UI.BunifuFlatButton();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.pnTable.SuspendLayout();
@@ -121,6 +121,7 @@
             this.panel1.Controls.Add(this.nmFoodCount);
             this.panel1.Controls.Add(this.cbFood);
             this.panel1.Controls.Add(this.cbCategory);
+            this.panel1.Controls.Add(this.btnXoaMon);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(532, 0);
             this.panel1.Name = "panel1";
@@ -167,12 +168,12 @@
             // 
             // nmFoodCount
             // 
-            this.nmFoodCount.Location = new System.Drawing.Point(308, 20);
+            this.nmFoodCount.Location = new System.Drawing.Point(308, 7);
             this.nmFoodCount.Minimum = new decimal(new int[] {
-            100,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.nmFoodCount.Name = "nmFoodCount";
             this.nmFoodCount.Size = new System.Drawing.Size(101, 20);
             this.nmFoodCount.TabIndex = 3;
@@ -207,7 +208,6 @@
             this.panel2.Controls.Add(this.btnChuyenban);
             this.panel2.Controls.Add(this.cbChuyenban);
             this.panel2.Controls.Add(this.tbxTotalPrice);
-            this.panel2.Controls.Add(this.btnDiscound);
             this.panel2.Controls.Add(this.btnThanhtoan);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(532, 434);
@@ -217,12 +217,7 @@
             // 
             // nmDiscount
             // 
-            this.nmDiscount.Location = new System.Drawing.Point(93, 37);
-            this.nmDiscount.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
+            this.nmDiscount.Location = new System.Drawing.Point(94, 19);
             this.nmDiscount.Name = "nmDiscount";
             this.nmDiscount.Size = new System.Drawing.Size(89, 20);
             this.nmDiscount.TabIndex = 8;
@@ -282,42 +277,43 @@
             this.tbxTotalPrice.Size = new System.Drawing.Size(136, 20);
             this.tbxTotalPrice.TabIndex = 4;
             // 
-            // btnDiscound
+            // btnXoaMon
             // 
-            this.btnDiscound.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscound.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDiscound.BorderRadius = 0;
-            this.btnDiscound.ButtonText = "Giảm giá";
-            this.btnDiscound.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDiscound.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDiscound.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiscound.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDiscound.Iconimage = null;
-            this.btnDiscound.Iconimage_right = null;
-            this.btnDiscound.Iconimage_right_Selected = null;
-            this.btnDiscound.Iconimage_Selected = null;
-            this.btnDiscound.IconMarginLeft = 0;
-            this.btnDiscound.IconMarginRight = 0;
-            this.btnDiscound.IconRightVisible = true;
-            this.btnDiscound.IconRightZoom = 0D;
-            this.btnDiscound.IconVisible = true;
-            this.btnDiscound.IconZoom = 90D;
-            this.btnDiscound.IsTab = false;
-            this.btnDiscound.Location = new System.Drawing.Point(93, 5);
-            this.btnDiscound.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDiscound.Name = "btnDiscound";
-            this.btnDiscound.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.btnDiscound.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnDiscound.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDiscound.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnDiscound.selected = false;
-            this.btnDiscound.Size = new System.Drawing.Size(87, 27);
-            this.btnDiscound.TabIndex = 3;
-            this.btnDiscound.Text = "Giảm giá";
-            this.btnDiscound.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDiscound.Textcolor = System.Drawing.Color.White;
-            this.btnDiscound.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMon.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnXoaMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnXoaMon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnXoaMon.BorderRadius = 0;
+            this.btnXoaMon.ButtonText = "Xoá món";
+            this.btnXoaMon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaMon.DisabledColor = System.Drawing.Color.Gray;
+            this.btnXoaMon.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMon.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnXoaMon.Iconimage = null;
+            this.btnXoaMon.Iconimage_right = null;
+            this.btnXoaMon.Iconimage_right_Selected = null;
+            this.btnXoaMon.Iconimage_Selected = null;
+            this.btnXoaMon.IconMarginLeft = 0;
+            this.btnXoaMon.IconMarginRight = 0;
+            this.btnXoaMon.IconRightVisible = true;
+            this.btnXoaMon.IconRightZoom = 0D;
+            this.btnXoaMon.IconVisible = true;
+            this.btnXoaMon.IconZoom = 90D;
+            this.btnXoaMon.IsTab = false;
+            this.btnXoaMon.Location = new System.Drawing.Point(308, 30);
+            this.btnXoaMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaMon.Name = "btnXoaMon";
+            this.btnXoaMon.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
+            this.btnXoaMon.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnXoaMon.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnXoaMon.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnXoaMon.selected = false;
+            this.btnXoaMon.Size = new System.Drawing.Size(100, 27);
+            this.btnXoaMon.TabIndex = 3;
+            this.btnXoaMon.Text = "Xoá món";
+            this.btnXoaMon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXoaMon.Textcolor = System.Drawing.Color.White;
+            this.btnXoaMon.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaMon.Click += new System.EventHandler(this.btnXoaMon_Click);
             // 
             // btnThanhtoan
             // 
@@ -376,6 +372,7 @@
             this.Controls.Add(this.pnTable);
             this.Name = "ucTable";
             this.Size = new System.Drawing.Size(944, 495);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ucTable_KeyUp);
             this.pnTable.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -400,7 +397,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnChuyenban;
         private System.Windows.Forms.ComboBox cbChuyenban;
         private System.Windows.Forms.TextBox tbxTotalPrice;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDiscound;
+        private Bunifu.Framework.UI.BunifuFlatButton btnXoaMon;
         private Bunifu.Framework.UI.BunifuFlatButton btnThanhtoan;
         private System.Windows.Forms.FlowLayoutPanel flpTable;
         private System.Windows.Forms.ListView lsvBill;

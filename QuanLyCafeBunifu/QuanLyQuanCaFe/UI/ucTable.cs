@@ -16,13 +16,14 @@ namespace QuanLyQuanCaFe
 {
     public partial class ucTable : UserControl
     {
+        
         public ucTable()
         {
             InitializeComponent();
             LoadTable();
             LoadCategory();
             LoadComboboxTable(cbChuyenban);
-
+           
         }
 
         #region Method
@@ -58,8 +59,8 @@ namespace QuanLyQuanCaFe
             flpTable.Controls.Clear();
             //if (pnMenu.Width == 250)
             //    pnTable.Location = new Point(250, 49);
-            Bitmap bitmap = new Bitmap(Application.StartupPath + "\\btnTable.png");
-            Bitmap bitmap1 = new Bitmap(Application.StartupPath + "\\btnTable12.png");
+            Bitmap bitmap = new Bitmap(Application.StartupPath + @"\image\btnTable.png");
+            Bitmap bitmap1 = new Bitmap(Application.StartupPath + @"\image\btnTable12.png");
             List<DTO.Table> tableList = TableDAO.Instance.LoadTableList();
             foreach (DTO.Table item in tableList)
             {
@@ -198,11 +199,45 @@ namespace QuanLyQuanCaFe
         }
 
 
+
         #endregion
 
         private void flpTable_MouseClick(object sender, MouseEventArgs e)
         {
-            fTableManager.checktemp = 1;
+            //fTableManager.checktemp = 1;
+        }
+
+        private void ucTable_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Shift)
+            {
+                if (e.KeyCode.Equals(Keys.A))
+                {
+                    btnThem_Click(this, new EventArgs());
+                }
+                if (e.KeyCode.Equals(Keys.T))
+                {
+                    btnThanhtoan_Click(this, new EventArgs());
+                }
+
+            }
+        }
+
+        private void btnXoaMon_Click(object sender, EventArgs e)
+        {
+            DTO.Table table = lsvBill.Tag as DTO.Table;
+
+            int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.ID);
+            int foodID = (cbFood.SelectedItem as Food).ID;
+            int count = (int)nmFoodCount.Value;
+
+
+            BillInfoDAO.Instance.InsertBillInfo(idBill, foodID, -1);
+
+
+
+            ShowBill(table.ID);
+            LoadTable();
         }
     }
 }

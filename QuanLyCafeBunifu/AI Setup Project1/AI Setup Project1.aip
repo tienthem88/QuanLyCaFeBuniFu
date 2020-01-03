@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="16.6.1" version="16.6.1" Modules="simple" RootPath="." Language="en" Id="{34BAEB2C-6070-44BB-88A9-3AEDE71FB270}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_VERSION;AI_DETECTED_SQLEXPRESS_VERSION"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.0" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.0.1" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_SQLEXPRESS_DISPLAY" MultiBuildValue="DefaultBuild:SQL Server Express 2017" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_SQLEXPRESS_VERSION" MultiBuildValue="DefaultBuild:2017" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Your Company"/>
+    <ROW Property="ProductCode" Value="1033:{5DE56385-DD9F-4A41-8C05-4157D82A0588} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Your Application"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{B967A0E8-9D85-4D68-B6F8-70BE19A6C9E5}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="image_Dir" Directory_Parent="APPDIR" DefaultDir="image"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{53D0F237-D94F-4D0E-952D-C9C9475651C9}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Bunifu_UI_v1.5.3.dll" ComponentId="{26C0241A-2954-406A-B41A-CF20843876DB}" Directory_="APPDIR" Attributes="0" KeyPath="Bunifu_UI_v1.5.3.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{46E117F9-6EF6-4DE6-A696-8CA995CF9FC3}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="QuanLyQuanCaFe.exe.config" ComponentId="{8CEC0140-057E-4D53-A213-09D6FA5F9FAE}" Directory_="APPDIR" Attributes="0" KeyPath="QuanLyQuanCaFe.exe.config" Type="0"/>
+    <ROW Component="QuanLyQuanCaFe.pdb" ComponentId="{41EEDA7D-4BE9-4B48-A5F2-070CCF900C21}" Directory_="APPDIR" Attributes="0" KeyPath="QuanLyQuanCaFe.exe"/>
+    <ROW Component="png" ComponentId="{27238C20-DFCD-471A-90BE-3C1AFAED8761}" Directory_="image_Dir" Attributes="0" KeyPath="png" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="QuanLyQuanCaFe.pdb" Component_="QuanLyQuanCaFe.pdb" FileName="QUANLY~1.PDB|QuanLyQuanCaFe.pdb" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.pdb" SelfReg="false"/>
+    <ROW File="Bunifu_UI_v1.5.3.dll" Component_="Bunifu_UI_v1.5.3.dll" FileName="BUNIFU~1.DLL|Bunifu_UI_v1.5.3.dll" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\Bunifu_UI_v1.5.3.dll" SelfReg="false"/>
+    <ROW File="QuanLyQuanCaFe.exe" Component_="QuanLyQuanCaFe.pdb" FileName="QUANLY~1.EXE|QuanLyQuanCaFe.exe" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="png" Component_="png" FileName="104113~1.PNG|1041139-200.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\1041139-200.png" SelfReg="false"/>
+    <ROW File="_2116158135276700_7916135508485757105_n.jpg" Component_="png" FileName="146064~1.JPG|14606432_2116158135276700_7916135508485757105_n.jpg" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\14606432_2116158135276700_7916135508485757105_n.jpg" SelfReg="false"/>
+    <ROW File="png_9" Component_="png" FileName="159635~1.PNG|159635-200.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\159635-200.png" SelfReg="false"/>
+    <ROW File="_BuiTrongKhanhDuy_BCT.png" Component_="png" FileName="185206~1.PNG|18520654_BuiTrongKhanhDuy_ĐBCT.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\18520654_BuiTrongKhanhDuy_ĐBCT.png" SelfReg="false"/>
+    <ROW File="png_10" Component_="png" FileName="39-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\39-512.png" SelfReg="false"/>
+    <ROW File="png_11" Component_="png" FileName="4-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\4-512.png" SelfReg="false"/>
+    <ROW File="png_12" Component_="png" FileName="537-01~1.PNG|537-01-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\537-01-512.png" SelfReg="false"/>
+    <ROW File="e4ae9cb11b227491c3394.png" Component_="png" FileName="585E4A~1.PNG|585e4ae9cb11b227491c3394.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\585e4ae9cb11b227491c3394.png" SelfReg="false"/>
+    <ROW File="_516863478912631_5982905223037845504_n.png" Component_="png" FileName="798042~1.PNG|79804229_516863478912631_5982905223037845504_n.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\79804229_516863478912631_5982905223037845504_n.png" SelfReg="false"/>
+    <ROW File="_516863478912631_5982905223037845504_n1.png" Component_="png" FileName="798042~2.PNG|79804229_516863478912631_5982905223037845504_n1.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\79804229_516863478912631_5982905223037845504_n1.png" SelfReg="false"/>
+    <ROW File="aaaaa.png" Component_="png" FileName="aaaaa.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\aaaaa.png" SelfReg="false"/>
+    <ROW File="add_plus512.png" Component_="png" FileName="ADD_PL~1.PNG|add_plus-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\add_plus-512.png" SelfReg="false"/>
+    <ROW File="adminicon0.png" Component_="png" FileName="ADMIN-~1.PNG|admin-icon-0.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\admin-icon-0.png" SelfReg="false"/>
+    <ROW File="blackandwhitefoodiconpng5.png" Component_="png" FileName="BLACK-~1.PNG|black-and-white-food-icon-png-5.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\black-and-white-food-icon-png-5.png" SelfReg="false"/>
+    <ROW File="btnTable.png" Component_="png" FileName="btnTable.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\btnTable.png" SelfReg="false"/>
+    <ROW File="btnTable11.png" Component_="png" FileName="BTNTAB~1.PNG|btnTable11.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\btnTable11.png" SelfReg="false"/>
+    <ROW File="btnTable12.png" Component_="png" FileName="BTNTAB~2.PNG|btnTable12.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\btnTable12.png" SelfReg="false"/>
+    <ROW File="btwiconcafe.png" Component_="png" FileName="BTW-IC~1.PNG|btw-icon-cafe.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\btw-icon-cafe.png" SelfReg="false"/>
+    <ROW File="closedeleteexitnoremovestopicon1320191167239715440.png" Component_="png" FileName="CLOSE_~1.PNG|close+delete+exit+no+remove+stop+icon-1320191167239715440.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\close+delete+exit+no+remove+stop+icon-1320191167239715440.png" SelfReg="false"/>
+    <ROW File="closedeleteexitnoremovestopicon13201911672397154401.png" Component_="png" FileName="CLOSE_~2.PNG|close+delete+exit+no+remove+stop+icon-13201911672397154401.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\close+delete+exit+no+remove+stop+icon-13201911672397154401.png" SelfReg="false"/>
+    <ROW File="coffeetable30976468.png" Component_="png" FileName="COFFEE~1.PNG|coffee-table-30-976468.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\coffee-table-30-976468.png" SelfReg="false"/>
+    <ROW File="coffeetable33976476.png" Component_="png" FileName="COFFEE~2.PNG|coffee-table-33-976476.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\coffee-table-33-976476.png" SelfReg="false"/>
+    <ROW File="coffeetable36976489.png" Component_="png" FileName="COFFEE~3.PNG|coffee-table-36-976489.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\coffee-table-36-976489.png" SelfReg="false"/>
+    <ROW File="cup2512.jpg" Component_="png" FileName="cup2-512.jpg" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\cup2-512.jpg" SelfReg="false"/>
+    <ROW File="cup2512.png" Component_="png" FileName="cup2-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\cup2-512.png" SelfReg="false"/>
+    <ROW File="delete14324001211078.png" Component_="png" FileName="DELETE~1.PNG|delete-1432400-1211078.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\delete-1432400-1211078.png" SelfReg="false"/>
+    <ROW File="deuceiconsupdatequitpngicon.jpg" Component_="png" FileName="DEUCE-~1.JPG|deuce-icons-update-quit-png-icon.jpg" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\deuce-icons-update-quit-png-icon.jpg" SelfReg="false"/>
+    <ROW File="entoni_quit512.png" Component_="png" FileName="ENTONI~1.PNG|entoni_quit-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\entoni_quit-512.png" SelfReg="false"/>
+    <ROW File="iconaccount13.png" Component_="png" FileName="ICON-A~1.PNG|icon-account-13.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\icon-account-13.png" SelfReg="false"/>
+    <ROW File="img_186707.png" Component_="png" FileName="IMG_18~1.PNG|img_186707.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\img_186707.png" SelfReg="false"/>
+    <ROW File="lockpasswordprotectsafetysecurityicon1320086045132546966.png" Component_="png" FileName="LOCK_P~1.PNG|lock+password+protect+safety+security+icon-1320086045132546966.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\lock+password+protect+safety+security+icon-1320086045132546966.png" SelfReg="false"/>
+    <ROW File="lockpasswordprotectsafetysecurityicon13200860451325469661.png" Component_="png" FileName="LOCK_P~2.PNG|lock+password+protect+safety+security+icon-13200860451325469661.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\lock+password+protect+safety+security+icon-13200860451325469661.png" SelfReg="false"/>
+    <ROW File="logo.jpg" Component_="png" FileName="logo.jpg" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\logo.jpg" SelfReg="false"/>
+    <ROW File="logo1.jpg" Component_="png" FileName="logo1.jpg" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\logo1.jpg" SelfReg="false"/>
+    <ROW File="mobilenavicon.png" Component_="png" FileName="MOBILE~1.PNG|mobile-nav-icon.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\mobile-nav-icon.png" SelfReg="false"/>
+    <ROW File="myaccounticon11.png" Component_="png" FileName="MY-ACC~1.PNG|my-account-icon-11.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\my-account-icon-11.png" SelfReg="false"/>
+    <ROW File="profilesilhouettevector21.png" Component_="png" FileName="PROFIL~1.PNG|profile-silhouette-vector-21.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\profile-silhouette-vector-21.png" SelfReg="false"/>
+    <ROW File="quit512.png" Component_="png" FileName="quit-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\quit-512.png" SelfReg="false"/>
+    <ROW File="quit5121.png" Component_="png" FileName="QUIT-5~1.PNG|quit-5121.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\quit-5121.png" SelfReg="false"/>
+    <ROW File="sourcechangepasswordicon115632113989lfjrixlx8.png" Component_="png" FileName="SOURCE~1.PNG|source-change-password-icon-115632113989lfjrixlx8.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\source-change-password-icon-115632113989lfjrixlx8.png" SelfReg="false"/>
+    <ROW File="sourcechangepasswordicon115632113989lfjrixlx81.png" Component_="png" FileName="SOURCE~2.PNG|source-change-password-icon-115632113989lfjrixlx81.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\source-change-password-icon-115632113989lfjrixlx81.png" SelfReg="false"/>
+    <ROW File="table.png" Component_="png" FileName="table.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\table.png" SelfReg="false"/>
+    <ROW File="ThoiKhoaBieu.png" Component_="png" FileName="THOIKH~1.PNG|Thoi Khoa Bieu.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\Thoi Khoa Bieu.png" SelfReg="false"/>
+    <ROW File="visibility512.png" Component_="png" FileName="VISIBI~1.PNG|visibility-512.png" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\image\visibility-512.png" SelfReg="false"/>
+    <ROW File="QuanLyQuanCaFe.exe.config" Component_="QuanLyQuanCaFe.exe.config" FileName="QUANLY~1.CON|QuanLyQuanCaFe.exe.config" Attributes="0" SourcePath="..\QuanLyQuanCaFe\Resources\QuanLyQuanCaFe.exe.config" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="QuanLyQuanCaFe.pdb"/>
+    <ROW Feature_="MainFeature" Component_="Bunifu_UI_v1.5.3.dll"/>
+    <ROW Feature_="MainFeature" Component_="png"/>
+    <ROW Feature_="MainFeature" Component_="QuanLyQuanCaFe.exe.config"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_SQLEXPRESS_VERSION &gt;= AI_REQUIRED_SQLEXPRESS_VERSION" Description="[ProductName] cannot be installed on systems without [AI_REQUIRED_SQLEXPRESS_DISPLAY] or higher." DescriptionLocId="AI.LaunchCondition.SQLExpress" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

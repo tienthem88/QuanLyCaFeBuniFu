@@ -17,6 +17,7 @@ namespace QuanLyQuanCaFe
         public fLogin()
         {
             InitializeComponent();
+            this.KeyPreview = true;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -53,6 +54,19 @@ namespace QuanLyQuanCaFe
 
             if (MessageBox.Show("Bạn có thật sự muốn thoát chương trình ?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
                 e.Cancel = true;
+        }
+
+        private void fLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void fLogin_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.Equals(Keys.Enter))
+            {
+                btnLogin_Click(this, new EventArgs());
+            }
         }
     }
     

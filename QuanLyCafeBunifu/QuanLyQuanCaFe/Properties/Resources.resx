@@ -118,127 +118,136 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="profile-silhouette-vector-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profile-silhouette-vector-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\aaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="537-01-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\537-01-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_plus_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\add_plus-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="79804229_516863478912631_5982905223037845504_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\79804229_516863478912631_5982905223037845504_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="admin_icon_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\admin-icon-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon-account-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon-account-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black_and_white_food_icon_png_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\black-and-white-food-icon-png-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="585e4ae9cb11b227491c3394" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\585e4ae9cb11b227491c3394.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\btnTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="14606432_2116158135276700_7916135508485757105_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\14606432_2116158135276700_7916135508485757105_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTable11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\btnTable11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="source-change-password-icon-115632113989lfjrixlx81" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\source-change-password-icon-115632113989lfjrixlx81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTable12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\btnTable12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="deuce-icons-update-quit-png-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deuce-icons-update-quit-png-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btw_icon_cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\btw-icon-cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coffee-table-30-976468" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coffee-table-30-976468.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_delete_exit_no_remove_stop_icon_1320191167239715440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\close+delete+exit+no+remove+stop+icon-1320191167239715440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1041139-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1041139-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_delete_exit_no_remove_stop_icon_13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="my-account-icon-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\my-account-icon-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coffee_table_30_976468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\coffee-table-30-976468.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cup2-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cup2-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coffee_table_33_976476" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\coffee-table-33-976476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coffee_table_36_976489" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\coffee-table-36-976489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="entoni_quit-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\entoni_quit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cup2_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\cup2-512.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cup2_5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\cup2-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close+delete+exit+no+remove+stop+icon-1320191167239715440" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close+delete+exit+no+remove+stop+icon-1320191167239715440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete_1432400_1211078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\delete-1432400-1211078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="black-and-white-food-icon-png-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\black-and-white-food-icon-png-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="deuce_icons_update_quit_png_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\deuce-icons-update-quit-png-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="source-change-password-icon-115632113989lfjrixlx8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\source-change-password-icon-115632113989lfjrixlx8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="entoni_quit_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\entoni_quit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Thoi Khoa Bieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thoi Khoa Bieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock+password+protect+safety+security+icon-13200860451325469661" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock+password+protect+safety+security+icon-13200860451325469661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btw-icon-cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btw-icon-cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close+delete+exit+no+remove+stop+icon-13201911672397154401" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close+delete+exit+no+remove+stop+icon-13201911672397154401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock+password+protect+safety+security+icon-1320086045132546966" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lock+password+protect+safety+security+icon-1320086045132546966.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coffee-table-33-976476" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coffee-table-33-976476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="admin-icon-0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\admin-icon-0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_plus-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_plus-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="coffee-table-36-976489" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coffee-table-36-976489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="79804229_516863478912631_5982905223037845504_n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\79804229_516863478912631_5982905223037845504_n1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="visibility-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\visibility-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="39-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\39-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_account_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\icon-account-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_186707" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_186707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\image\img_186707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lock_password_protect_safety_security_icon_1320086045132546966" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\lock+password+protect+safety+security+icon-1320086045132546966.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cup2-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cup2-512.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lock_password_protect_safety_security_icon_13200860451325469661" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\lock+password+protect+safety+security+icon-13200860451325469661.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mobile-nav-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mobile-nav-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="159635-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\159635-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\logo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quit-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quit-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mobile_nav_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\mobile-nav-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quit-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="my_account_icon_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\my-account-icon-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="18520654_BuiTrongKhanhDuy_ĐBCT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\18520654_BuiTrongKhanhDuy_ĐBCT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profile_silhouette_vector_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\profile-silhouette-vector-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete-1432400-1211078" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete-1432400-1211078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="quit_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\quit-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quit_5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\quit-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_change_password_icon_115632113989lfjrixlx8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\source-change-password-icon-115632113989lfjrixlx8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source_change_password_icon_115632113989lfjrixlx81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\source-change-password-icon-115632113989lfjrixlx81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thoi_Khoa_Bieu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\Thoi Khoa Bieu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visibility_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\visibility-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1041139_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\1041139-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_14606432_2116158135276700_7916135508485757105_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\14606432_2116158135276700_7916135508485757105_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_159635_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\159635-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_18520654_BuiTrongKhanhDuy_ĐBCT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\18520654_BuiTrongKhanhDuy_ĐBCT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_39_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\39-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\4-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_537_01_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\537-01-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_585e4ae9cb11b227491c3394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\585e4ae9cb11b227491c3394.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_79804229_516863478912631_5982905223037845504_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\79804229_516863478912631_5982905223037845504_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_79804229_516863478912631_5982905223037845504_n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image\79804229_516863478912631_5982905223037845504_n1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

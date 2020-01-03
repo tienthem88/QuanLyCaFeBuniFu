@@ -13,6 +13,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Menu = QuanLyQuanCaFe.DTO.Menu;
+
 using Bunifu;
 using QuanLyQuanCaFe.UI.UC_Admin;
 
@@ -31,7 +32,7 @@ namespace QuanLyQuanCaFe
 
         }
 
-        public static int checktemp=0;
+        //public static int checktemp=0;
 
         public fTableManager(Account acc)
         {
@@ -69,7 +70,7 @@ namespace QuanLyQuanCaFe
         }
        
 
-        private void btnMenu_Click(object sender, EventArgs e)
+        public void btnMenu_Click(object sender, EventArgs e)
         {
             if (pnMenu.Width == 45)
             {
@@ -187,21 +188,21 @@ namespace QuanLyQuanCaFe
 
         private void pnTheme_MouseMove(object sender, MouseEventArgs e)
         {
-            if(checktemp==1)
-            {
-                Sperate.Visible = false;
-                ptbLogo.Visible = false;
-                pnMenu.Visible = false;
-                pnMenu.Width = 45;
-                btnTable.Location = new Point(0, 200);
-                btnInformation.Location = new Point(0, 270);
-                btnAdmin.Location = new Point(0, 340);
-                btnMenu.Location = new Point(10, 19);
-                animationMenuClose.ShowSync(pnMenu);
-                anmationLogo.ShowSync(btnMenu);
-                pnTheme.Location = new Point(46, 36);
-                ptbxLogoMini.Visible = true;
-            }
+            //if(checktemp==1)
+            //{
+            //    Sperate.Visible = false;
+            //    ptbLogo.Visible = false;
+            //    pnMenu.Visible = false;
+            //    pnMenu.Width = 45;
+            //    btnTable.Location = new Point(0, 200);
+            //    btnInformation.Location = new Point(0, 270);
+            //    btnAdmin.Location = new Point(0, 340);
+            //    btnMenu.Location = new Point(10, 19);
+            //    animationMenuClose.ShowSync(pnMenu);
+            //    anmationLogo.ShowSync(btnMenu);
+            //    pnTheme.Location = new Point(46, 36);
+            //    ptbxLogoMini.Visible = true;
+            //}
         }
 
         private void fTableManager_KeyUp(object sender, KeyEventArgs e)
@@ -215,17 +216,66 @@ namespace QuanLyQuanCaFe
 
                 if (e.KeyCode.Equals(Keys.T))
                 {
-                    btnTable_Click(this, new EventArgs());
+                    pnTheme.Location = new Point(46, 36);
+                    pnTheme.Controls.Clear();
+                    ucTable uctable = new ucTable();
+                    uctable.Dock = DockStyle.Fill;
+                    uctable.Visible = false;
+                    pnTheme.Controls.Add(uctable);
+                    btnTable.selected = true;
+                    btnInformation.selected = false;
+                    btnAdmin.selected = false;
+                    btnTable.Textcolor = Color.White;
+                    btnInformation.Textcolor = Color.DimGray;
+                    btnAdmin.Textcolor = Color.DimGray;
+
+
+                    animationTable.ShowSync(uctable);
                 }
                 if (e.KeyCode.Equals(Keys.I))
                 {
-                    btnInformation_Click(this, new EventArgs());
+                    pnTheme.Controls.Clear();
+                    ucAcount ucAcount = new ucAcount();
+                    ucAcount.LoginAccount = LoginAccount;
+                    ucAcount.Dock = DockStyle.Fill;
+
+                    ucAcount.Visible = false;
+                    pnTheme.Controls.Add(ucAcount);
+
+                    animationTable.ShowSync(ucAcount);
+
+                    btnTable.selected = false;
+                    btnInformation.selected = true;
+                    btnAdmin.selected = false;
+                    btnTable.Textcolor = Color.DimGray;
+                    btnInformation.Textcolor = Color.White;
+                    btnAdmin.Textcolor = Color.DimGray;
                 }
                 if (e.KeyCode.Equals(Keys.A))
                 {
-                    btnAdmin_Click(this, new EventArgs());
+                    ucAdmin ucadmin = new ucAdmin();
+                    ucadmin.loginAccount = LoginAccount;
+                    pnTheme.Location = new Point(46, 36);
+                    pnTheme.Controls.Clear();
+
+                    ucadmin.Dock = DockStyle.Fill;
+                    ucadmin.Visible = false;
+                    pnTheme.Controls.Add(ucadmin);
+
+                    animationTable.ShowSync(ucadmin);
+
+                    btnTable.selected = false;
+                    btnInformation.selected = false;
+                    btnAdmin.selected = true;
+                    btnTable.Textcolor = Color.DimGray;
+                    btnInformation.Textcolor = Color.DimGray;
+                    btnAdmin.Textcolor = Color.White;
                 }
             }
+            
+           
         }
+
+       
     }
 }
